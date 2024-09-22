@@ -10,12 +10,14 @@
         "src/components/*"
       ],
       "@/icons": [
-        "src/icons/*"
+        "src/icon/*"
       ],
       "@/lib": [
         "src/lib/*"
       ]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "exclude": [
     "public"
