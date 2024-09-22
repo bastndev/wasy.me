@@ -3,11 +3,11 @@ import { Icons } from "@/icon/icons";
 ---
 
 <div class="container">
-    <a class="flutter" href="#1">
-        <Icons.Flutter className="w-7" />
+    <a class="icon-select flutter" href="#1">
+        <Icons.Flutter className="icon" />
     </a>
-    <a class="astro" href="#2">
-        <Icons.Astro className="w-7" />
+    <a class="icon-select astro" href="#2">
+        <Icons.Astro className="icon" />
     </a>
 </div>
 
@@ -20,19 +20,29 @@ import { Icons } from "@/icon/icons";
         width: 100px;
         height: 300px;
         margin-top: 3rem;
-        top: 0;
+    }
+
+    .icon-select {
+        margin: 0 10px;
+        padding: 5px;
+        border: 1px solid rgb(33, 33, 33);
+        border-radius: 8px;
+        background-color: black;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
 
     .flutter {
-        background-color: #02569b;
-        border-radius: 10%;
-        padding: 10px;
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
+        box-shadow: 0 10px 20px #007bff99;
     }
 
-    .astro {
-        background-color: #000;
-        border-radius: 10%;
-        padding: 10px;
+    .astro:hover {
+        transform: translateY(-5px);
+        border: none;
+        box-shadow: 0 10px 20px rgba(255, 68, 0, 0.6);
+    }
+
+    .icon {
+        width: 1.5rem; 
     }
 </style>
