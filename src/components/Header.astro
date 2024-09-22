@@ -1,54 +1,35 @@
 ---
-
+import { Icons } from "@/icon/icons";
+import MooSun from "@/icon/moo-sun.astro";
 ---
 
-<header class="header">
-    <div class="container">
+<header class="bg-transparent text-white py-4">
+    <div
+        class="container mx-auto flex justify-between items-center px-4 max-w-screen-xl"
+    >
         <div class="logo">
-            <p>wasy <span>.me</span></p>
+            <p>
+                wasy <span class="me">.me</span>
+            </p>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <MooSun />
+        <div class="flex items-center space-x-4">
+            <p class="version">v0.0.1</p>
+            <Icons.GitHub className="h-6 w-auto" />
+        </div>
     </div>
 </header>
 
 <style>
-    .header {
-        /* background-color: #00000065; */
-        color: #fff;
-        padding: 1rem 0;
-    }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-    span {
+    .me {
         background-color: rgb(0, 0, 0);
         border-radius: 5px;
         padding: 0 10px 5px 5px;
-        border: 1px solid #3d3d3d;
+        border: 1px solid #191919;
     }
-    .nav ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-    }
-    .nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .nav a:hover {
-        text-decoration: underline;
+    .version {
+        background: #2929296b;
+        border-radius: 5px;
+        padding: 3px 10px 5px 10px;
     }
 </style>

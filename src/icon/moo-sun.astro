@@ -1,0 +1,27 @@
+<img id="darkMode" class="LightMode h-4" src="/assets/icons/sun-white.svg" alt="" />
+
+<!-- css{:::::::::::::::::::::::> -->
+<style>
+  .LightMode:hover {
+    cursor: pointer;
+    box-shadow:
+      0 0 5px rgba(255, 255, 255, 0.6),
+      0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 20px rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+  }
+</style>
+
+<script>
+  const imageElement = document.querySelector("#darkMode") as HTMLImageElement;
+
+  imageElement!.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    if (imageElement.src.endsWith("/assets/icons/sun-white.svg")) {
+      imageElement.src = "/assets/icons/moon-black.svg";
+    } else {
+      imageElement.src = "/assets/icons/sun-white.svg";
+    }
+  });
+</script>
