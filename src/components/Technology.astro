@@ -3,50 +3,36 @@ import { Icons } from "@/icon/icons";
 ---
 
 <div class="container">
-    <div class="h-14"></div>
     <a class="flutter" href="#1">
-        <Icons.Flutter className="w-10" />
+        <Icons.Flutter className="w-7" />
     </a>
-    <div class="h-10"></div>
     <a class="astro" href="#2">
-        <Icons.Astro className="w-12" />
-    </a>
-    <div class="h-10"></div>
-    <a class="profile" href="#3">
-        <img
-            src="https://avatars.githubusercontent.com/u/113950039?v=4"
-            alt="bastndev"
-        />
+        <Icons.Astro className="w-7" />
     </a>
 </div>
 
 <!-- MARK: Style -->
 <style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        height: 300px;
+        margin-top: 3rem;
+        top: 0;
+    }
+
     .flutter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        padding: 15px 0;
-        /* background-color: red; */
-        border: 1px solid #4d4d4d;
-        border-radius: 10px;
+        background-color: #02569b;
+        border-radius: 10%;
+        padding: 10px;
+        margin-bottom: 2rem; 
     }
+
     .astro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        padding: 15px 0;
-        /* background-color: red; */
-        border: 1px solid #4d4d4d;
-        border-radius: 10px;
-    }
-    .profile img {
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        width: 80%;
-        border-radius: 50%;
+        background-color: #000;
+        border-radius: 10%;
+        padding: 10px;
     }
 </style>
