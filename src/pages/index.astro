@@ -1,14 +1,14 @@
 ---
-import Header from "@/components/Header.astro";
+import Header from "@/components/layout/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import Footer from "@/components/Footer.astro";
-import W from "@/components/W.astro";
+import Footer from "@/components/layout/Footer.astro";
+import W_Container from "@/components/W-Container.astro";
 ---
 
 <Layout title="wasy.me">
 	<Header />
 	<main class="flex-col flex x-auto max-w-5xl items-center mx-auto py-1">
-		<W />
+		<W_Container />
 	</main>
 	<Footer />
 </Layout>

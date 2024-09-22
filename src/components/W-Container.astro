@@ -1,0 +1,30 @@
+---
+import W from "@/icon/w.astro";
+import Technology from "./Technology.astro";
+---
+
+<section class="w-logo">
+    <div class="h-14"></div>
+    <div class="container">
+        <W />
+        <section class="select">
+            <Technology />
+        </section>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        /* background-color: rgb(145, 145, 145); */
+    }
+    .select {
+        /* background-color: red; */
+        margin-left: 20px;
+        width: 100px;
+        height: 500px;
+    }
+</style>

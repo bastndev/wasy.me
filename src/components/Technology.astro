@@ -1,0 +1,52 @@
+---
+import { Icons } from "@/icon/icons";
+---
+
+<div class="container">
+    <div class="h-14"></div>
+    <a class="flutter" href="#1">
+        <Icons.Flutter className="w-10" />
+    </a>
+    <div class="h-10"></div>
+    <a class="astro" href="#2">
+        <Icons.Astro className="w-12" />
+    </a>
+    <div class="h-10"></div>
+    <a class="profile" href="#3">
+        <img
+            src="https://avatars.githubusercontent.com/u/113950039?v=4"
+            alt="bastndev"
+        />
+    </a>
+</div>
+
+<!-- MARK: Style -->
+<style>
+    .flutter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 15px 0;
+        /* background-color: red; */
+        border: 1px solid #4d4d4d;
+        border-radius: 10px;
+    }
+    .astro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 15px 0;
+        /* background-color: red; */
+        border: 1px solid #4d4d4d;
+        border-radius: 10px;
+    }
+    .profile img {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 80%;
+        border-radius: 50%;
+    }
+</style>
