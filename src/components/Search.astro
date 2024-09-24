@@ -8,11 +8,12 @@ import { Icons } from "@/icon/icons";
     <input
         type="text"
         class="search-input"
-        placeholder="Buscar"
-        aria-label="Buscar"
+        placeholder="Search"
+        aria-label="Search"
         oninput="handleSearch()"
+        spellcheck="false"
     />
-    <button class="search-button" aria-label="Buscar" onclick="handleSearch()">
+    <button class="search-button" aria-label="Search" onclick="handleSearch()">
         <Icons.Search />
     </button>
 </div>
@@ -28,6 +29,7 @@ import { Icons } from "@/icon/icons";
         background-color: #2c2c2c;
         border-radius: 10px;
         padding: 2px;
+        margin-bottom: 2rem;
     }
 
     .search-input {
