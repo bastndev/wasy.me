@@ -1,16 +1,21 @@
 ---
 import W from "@/icon/w.astro";
-import Tec from "./Tec.astro";
 import Navbar from "./layout/Navbar.astro";
+import Flutter from "@/icon/flutter.astro";
+import Astro from "@/icon/astro.astro";
 ---
 
-<section class="w-logo">
+<section class="header">
     <Navbar />
     <div class="container-logo">
         <a class="w" href="/">
             <W />
         </a>
-        <Tec />
+        <div class="tec">
+            <slot />
+            <!-- <Flutter /> -->
+            <!-- <Astro /> -->
+        </div>
     </div>
 </section>
 
@@ -22,8 +27,15 @@ import Navbar from "./layout/Navbar.astro";
         margin: 1.5rem 0 4rem 0;
         /* background-color: red; */
     }
-    .w{
+    .w {
         /* background-color: blue; */
         width: 69%;
+    }
+    .tec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        height: 300px;
     }
 </style>

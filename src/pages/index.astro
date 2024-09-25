@@ -1,15 +1,56 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Footer from "@/components/layout/Footer.astro";
 import Search from "@/components/Search.astro";
 import SelectOne from "@/components/SelectOne.astro";
+import Header from "@/components/Header.astro";
+import { Icons } from "@/icon/icons";
 ---
 
 <Layout title="wasy.me">
-	<!-- --- --- --- -- Search  -->
-	<Search />
-	<!-- --- --- --- -- Selection  -->
-	<SelectOne />
+    <Header>
+        <a class="flutter" href="/flutter">
+            <Icons.Flutter className="w-4" />
+        </a>
+        <a class="astro" href="/astro">
+            <Icons.Astro className="w-5" />
+        </a>
+    </Header>
+    <!-- --- --- --- -- Search  -->
+    <Search />
+    <!-- --- --- --- -- Selection  -->
+    <SelectOne />
 
-	<h1 class="dark:text-white">Main</h1>
+    <h1 class="dark:text-white">Astro Page</h1>
 </Layout>
+<style>
+    .flutter {
+        margin: 0 10px;
+        padding: 5px;
+        border: 1px solid rgb(33, 33, 33);
+        border-radius: 8px;
+        transition:
+            transform 0.5s ease,
+            box-shadow 0.5s ease;
+        margin-bottom: 2rem;
+    }
+    .flutter:hover {
+        transform: translateY(-5px);
+        border: none;
+        box-shadow: 0 10px 20px rgba(0, 123, 255, 0.6);
+    }
+    .astro {
+        margin: 0 10px;
+        padding: 5px;
+        border: 1px solid rgb(33, 33, 33);
+        border-radius: 8px;
+        transition:
+            transform 0.5s ease,
+            box-shadow 0.5s ease;
+        margin-bottom: 2rem;
+    }
+    .astro:hover {
+        transform: translateY(-5px);
+        border: none;
+        box-shadow: 0 10px 20px rgba(255, 68, 0, 0.6);
+    }
+</style>
