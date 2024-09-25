@@ -4,11 +4,11 @@ import Search from "@/components/Search.astro";
 import SelectOne from "@/components/SelectOne.astro";
 import Header from "@/components/Header.astro";
 import { Icons } from "@/icon/icons";
-import { Background } from "@/components/layout/Background";
+import { Light } from "@/components/layout/Light";
 ---
 
 <Layout title="wasy.me">
-    <Background.Main />
+    <Light.Main />
     <Header>
         <a class="flutter" href="/flutter">
             <Icons.Flutter className="w-4" />
@@ -22,7 +22,7 @@ import { Background } from "@/components/layout/Background";
     <!-- --- --- --- -- Selection  -->
     <SelectOne />
 
-    <h1 class="dark:text-white">Astro Page</h1>
+    <h1 class="dark:text-white">main</h1>
 </Layout>
 <style>
     .flutter {
