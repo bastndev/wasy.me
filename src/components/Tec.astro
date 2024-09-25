@@ -3,10 +3,10 @@ import { Icons } from "@/icon/icons";
 ---
 
 <div class="container">
-    <a class="icon-select flutter" href="#1">
+    <a class="icon-select flutter" href="/flutter">
         <Icons.Flutter className="icon" />
     </a>
-    <a class="icon-select astro" href="#2">
+    <a class="icon-select astro" href="/astro">
         <Icons.Astro className="icon" />
     </a>
 </div>
@@ -28,12 +28,19 @@ import { Icons } from "@/icon/icons";
         border: 1px solid rgb(33, 33, 33);
         border-radius: 8px;
         background-color: black;
-        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        transition:
+            transform 0.5s ease,
+            box-shadow 0.5s ease;
     }
 
     .flutter {
         margin-bottom: 2rem;
-        box-shadow: 0 10px 20px #007bff99;
+        /* box-shadow: 0 10px 20px #007bff99; */
+    }
+    .flutter:hover {
+        transform: translateY(-5px);
+        border: none;
+        box-shadow: 0 10px 20px rgba(0, 123, 255, 0.6);
     }
 
     .astro:hover {
@@ -43,6 +50,6 @@ import { Icons } from "@/icon/icons";
     }
 
     .icon {
-        width: 1.5rem; 
+        width: 1.5rem;
     }
 </style>
