@@ -1,5 +1,5 @@
 ---
-import W from "@/icon/w.astro";
+import Goble from "@/icon/goble.astro";
 import Navbar from "./layout/Navbar.astro";
 import Flutter from "@/icon/flutter.astro";
 import Astro from "@/icon/astro.astro";
@@ -7,16 +7,7 @@ import Astro from "@/icon/astro.astro";
 
 <section class="header">
     <Navbar />
-    <div class="container-logo">
-        <a class="w" href="/">
-            <W />
-        </a>
-        <div class="tec">
-            <slot />
-            <!-- <Flutter /> -->
-            <!-- <Astro /> -->
-        </div>
-    </div>
+    <slot />
 </section>
 
 <style>
@@ -28,15 +19,17 @@ import Astro from "@/icon/astro.astro";
         /* background-color: red; */
     }
     .w {
-        /* background-color: blue; */
-        width: 58%;
+        width: 100%;
+        background-color: red;
     }
     .tec {
+        /* background-color: blue; */
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         width: 100px;
         height: 300px;
         margin-top: 1rem;
+        margin-right: 0.2rem;
     }
 </style>

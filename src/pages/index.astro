@@ -1,21 +1,29 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Search from "@/components/Search.astro";
-import SelectOne from "@/components/SelectOne.astro";
 import Header from "@/components/Header.astro";
 import { Icons } from "@/icon/icons";
 import { Light } from "@/components/layout/Light";
+import Goble from "@/icon/goble.astro";
+import SelectOne from "@/components/SelectOne.astro";
 ---
 
 <Layout title="wasy.me">
     <Light.Main />
     <Header>
-        <a class="flutter" href="/flutter">
-            <Icons.Flutter className="w-4" />
-        </a>
-        <a class="astro" href="/astro">
-            <Icons.Astro className="w-5" />
-        </a>
+        <div class="container-logo">
+            <a class="w" href="/">
+                <Goble />
+            </a>
+            <div class="tec">
+                <a class="flutter" href="/flutter">
+                    <Icons.Flutter className="w-4" />
+                </a>
+                <a class="astro" href="/astro">
+                    <Icons.Astro className="w-5" />
+                </a>
+            </div>
+        </div>
     </Header>
     <!-- --- --- --- -- Search  -->
     <Search />
@@ -25,16 +33,37 @@ import { Light } from "@/components/layout/Light";
     <h1 class="dark:text-white">main</h1>
 </Layout>
 <style>
+    .container-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0 4rem 0;
+        /* background-color: red; */
+    }
+    .w {
+        width: 100%;
+        background-color: red;
+    }
+    .tec {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100px;
+        height: 300px;
+        margin-top: 1rem;
+        margin-right: 0.2rem;
+    }
     .flutter {
-        margin: 0 20px;
+        margin: 0 10px;
         padding: 10px;
         border: 1px solid rgb(33, 33, 33);
         border-radius: 8px;
-        background: black;
         transition:
             transform 0.5s ease,
             box-shadow 0.5s ease;
         margin-bottom: 2rem;
+        background: black;
     }
     .flutter:hover {
         transform: translateY(-5px);

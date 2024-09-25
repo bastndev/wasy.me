@@ -5,17 +5,25 @@ import SelectTecAstro from "@/components/SelectTecAstro.astro";
 import Header from "@/components/Header.astro";
 import { Icons } from "@/icon/icons";
 import { Light } from "@/components/layout/Light";
+import Goble from "@/icon/goble.astro";
 ---
 
 <Layout title="wasy.me">
     <Light.Astro />
     <Header>
-        <a class="flutter" href="/flutter">
-            <Icons.Flutter className="w-4" />
-        </a>
-        <a class="astro" href="/astro">
-            <Icons.Astro className="w-5" />
-        </a>
+        <div class="container-logo">
+            <a class="w" href="/">
+                <Goble />
+            </a>
+            <div class="tec">
+                <a class="flutter" href="/flutter">
+                    <Icons.Flutter className="w-4" />
+                </a>
+                <a class="astro" href="/astro">
+                    <Icons.Astro className="w-5" />
+                </a>
+            </div>
+        </div>
     </Header>
     <!-- --- --- --- -- Search  -->
     <Search />
@@ -25,6 +33,27 @@ import { Light } from "@/components/layout/Light";
     <h1 class="dark:text-white">Astro Page</h1>
 </Layout>
 <style>
+    .container-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0 4rem 0;
+        /* background-color: red; */
+    }
+    .w {
+        width: 100%;
+        background-color: red;
+    }
+    .tec {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100px;
+        height: 300px;
+        margin-top: 1rem;
+        margin-right: 0.2rem;
+    }
     .flutter {
         margin: 0 10px;
         padding: 10px;
