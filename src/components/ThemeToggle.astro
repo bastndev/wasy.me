@@ -6,7 +6,7 @@ import System from "@/icon/System.astro";
 const THEMES = ["Light", "Dark", "System"];
 ---
 
-<div class="lucas relative ml-1 mr-1">
+<div class="relative ml-1 mr-1 z-10">
   <button
     transition:persist
     id="theme-toggle-btn"
@@ -23,12 +23,12 @@ const THEMES = ["Light", "Dark", "System"];
   <div
     transition:persist
     id="themes-menu"
-    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-black dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>
       {
         THEMES.map((theme) => (
-          <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
+          <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/15 rounded-sm">
             {theme}
           </li>
         ))
@@ -38,9 +38,6 @@ const THEMES = ["Light", "Dark", "System"];
 </div>
 
 <style>
-  .lucas {
-    z-index: 1000;
-  }
   #themes-menu.open {
     display: inline;
     animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
