@@ -9,14 +9,12 @@ import Flutter from "@/icons/flutter.astro";
 
 <Layout title="wasy.me">
   <BgLight.Blue />
-  <div class="container-logo">
+  <section class="container-logo">
     <GobleText />
     <Flutter />
-  </div>
-  
-  <!-- --- --- --- -- Search  -->
+  </section>
+  <!-- --- --- --- -- Search and select  -->
   <Search />
-  <!-- --- --- --- -- Selection  -->
   <SelectTecFlutter />
 
   <h1 class="dark:text-white">Flutter Page</h1>
@@ -27,39 +25,6 @@ import Flutter from "@/icons/flutter.astro";
     justify-content: center;
     align-items: center;
     margin: 1.5rem 0 4rem 0;
-    /* background-color: red; */
-  }
-  .w {
-    width: 100%;
-    background-color: red;
-  }
-  .tec {
     /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100px;
-    height: 300px;
-    margin-top: 1rem;
-    margin-right: 0.2rem;
-  }
-  .flutter {
-    margin: 0 10px;
-    padding: 10px;
-    border: 1px solid rgb(33, 33, 33);
-    border-radius: 8px;
-    transition:
-      transform 0.5s ease,
-      box-shadow 0.5s ease;
-    margin-bottom: 2rem;
-    transform: translateY(-5px);
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.6);
-    background: black;
-  }
-  .flutter:hover {
-    transform: translateY(-5px);
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.6);
   }
 </style>
