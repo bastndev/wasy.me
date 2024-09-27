@@ -6,16 +6,17 @@ import { Icon } from "@/icons/Ui";
   <input
     type="text"
     class="search-input"
-    placeholder="Search"
+    placeholder="next release"
     aria-label="Search"
     oninput="handleSearch()"
     spellcheck="false"
   />
   <button class="search-button" aria-label="Search" onclick="handleSearch()">
-    <Icon.Search />
+    <Icon.Flare />
   </button>
 </div>
 
+<!-- MARK: Style -->
 <style>
   .search-container {
     position: relative;
@@ -48,7 +49,7 @@ import { Icon } from "@/icons/Ui";
   .search-button {
     background-color: #000000;
     border: none;
-    color: #999999;
+    color: #2e2e2e;
     padding: 10px;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
@@ -58,16 +59,16 @@ import { Icon } from "@/icons/Ui";
   }
 
   .search-button:hover {
-    /* background-color: #000000f5; */
-    color: #ffffff;
+    color: #a4a4a4;
   }
 </style>
 
+<!-- MARK: script -->
 <script>
   function handleSearch() {
     const searchInput = document.querySelector(".search-input");
     const query = searchInput ? (searchInput as HTMLInputElement).value : "";
     console.log("Searching for:", query);
-    // Aquí puedes agregar la lógica para realizar la búsqueda
+    // Here add your search logic
   }
 </script>

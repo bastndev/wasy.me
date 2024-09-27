@@ -4,27 +4,21 @@ import ThemeToggle from "../ThemeToggle.astro";
 ---
 
 <header class="bg-transparent dark:text-white py-4">
-  <div
-    class="mx-auto flex justify-center items-center px-4 max-w-screen-xl gap-64"
-  >
+  <div class="mx-auto flex justify-center items-center px-4 max-w-screen-xl gap-64">
     <a href="/" class="logo">
-      <p>
-        wasy <span class="me">.me</span>
-      </p>
+      <p>wasy <span class="me">.me</span></p>
     </a>
 
     <ThemeToggle />
-    <a
-      href="https://github.com/bastndev/wasy.me"
-      target="_blank"
-      class="flex items-center space-x-4"
-    >
-      <p class="version">v0.0.1</p>
+
+    <a href="https://github.com/bastndev/wasy.me" target="_blank" class="flex items-center space-x-4">
+      <p class="version">v0.0.2</p>
       <Icon.GitHub className="h-6 w-auto" />
     </a>
   </div>
 </header>
 
+<!-- MARK: Style -->
 <style>
   .me {
     background-color: rgb(0, 0, 0);
@@ -36,7 +30,7 @@ import ThemeToggle from "../ThemeToggle.astro";
   .version {
     background: #2929296b;
     border-radius: 5px;
-    padding: 1px 10px 1px 10px;
+    padding: 1px 10px;
     transition: 1s ease;
   }
   .version:hover {

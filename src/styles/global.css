@@ -4,14 +4,12 @@
 
 :root {
     --color-primary: #008cff;
-    --color-secondary: #f56701;
-    --color-tertiary: #374151;
-    --color-light: #ffffff;
-    --color-dark: #000000;
+    --color-secondary: #ff4000;
+    --color-tertiary: #f6ff00;
 
-    --color-1: #ff002a;
-    --color-2: #00ff30;
-    --color-3: #ffea00;
+    --color-1: #ffffff;
+    --color-2: #000000;
+    --color-3: #191919;
 }
 
 /* * {
@@ -20,11 +18,7 @@
 
 body {
     background-image: url("/assets/img/noise-background.svg");
-    /* background-color: #000000fe; */
     font-family: "Jura", sans-serif;
-    /* font-family: "Playwrite AR", cursive; */
-    /* background-size: cover; */
-    /* color: white; */
 }
 
 /* --- --- --- --- -- scroll bar  */
