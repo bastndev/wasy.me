@@ -1,7 +1,5 @@
 ---
-import Moon from "@/icons/Moon.astro";
-import Sun from "@/icons/Sun.astro";
-import System from "@/icons/System.astro";
+import { Icon } from "@/icons/Theme";
 
 const THEMES = ["Light", "Dark", "System"];
 ---
@@ -13,11 +11,11 @@ const THEMES = ["Light", "Dark", "System"];
     class="appearance-none border-none flex hover:scale-125 transition"
   >
     <span class="sr-only">Elige el tema</span>
-    <Moon id="light" class="theme-toggle-icon size-5 transition-all" />
-    <Sun id="dark" class="theme-toggle-icon absolute size-5 transition-all" />
-    <System
+    <Icon.Moon id="light" className="theme-toggle-icon size-5 transition-all" />
+    <Icon.Sun id="dark" className="theme-toggle-icon absolute size-5 transition-all" />
+    <Icon.System
       id="system"
-      class="theme-toggle-icon absolute size-5 transition-all"
+      className="theme-toggle-icon absolute size-5 transition-all"
     />
   </button>
   <div
