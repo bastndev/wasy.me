@@ -1,0 +1,37 @@
+---
+import { Icon } from "./Tech";
+---
+
+<div class="tec">
+  <a class="astro" href="/astro">
+    <Icon.Astro className="w-5" />
+  </a>
+</div>
+
+<style>
+  .tec {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100px;
+    height: 300px;
+
+    /* margin-top: 0rem; */
+    /* margin-right: 2rem; */
+  }
+  .astro {
+    margin: 0 10px;
+    padding: 9px;
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 8px;
+    transition:
+      transform 0.5s ease,
+      box-shadow 0.5s ease;
+    margin-bottom: 2rem;
+    transform: translateY(-5px);
+    border: none;
+    box-shadow: 0 10px 20px rgba(255, 68, 0, 0.6);
+    background: black;
+  }
+</style>
