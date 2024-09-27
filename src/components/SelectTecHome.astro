@@ -1,6 +1,5 @@
 <section class="contaier flex-col">
     <div class="mb-4 dark:text-white">
-        <a href="#All">.</a>
         <a href="#All">All</a>
         <a href="#Api">Api</a>
         <a href="#Icons">Icons</a>
@@ -8,7 +7,6 @@
         <a href="#Web">Web ex</a>
         <a href="#Coruse">Course</a>
         <a href="#Fonts">Fonts</a>
-        <a href="#Fonts">.</a>
     </div>
     <div id="delayed-text" class="hidden">
         <p class="dark:text-white">Select one <span>Tec</span></p>
@@ -20,8 +18,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        height: 300px;
+        height: 700px;
     }
 
     span {
@@ -31,18 +28,25 @@
         border: 1px solid #191919;
         color: rgb(0, 0, 0);
     }
+
     .mb-4 {
         position: relative;
-        font-family: sans-serif;
         text-transform: uppercase;
-        letter-spacing: 4px;
         overflow: hidden;
         background: linear-gradient(90deg, #000, #fff, #000);
         background-repeat: no-repeat;
         background-size: 80%;
-        animation: animate 3s linear 1;
+        animation: animate 3s linear 1 forwards; /* Añadir forwards para mantener el último estado */
         -webkit-background-clip: text;
         -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+    .mb-4 a {
+        margin-right: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .mb-4 a:hover {
+        color: var(--color-primary);
     }
 
     a {
@@ -65,16 +69,23 @@
         }
         100% {
             background-position: 500%;
+            background-size: 100%; /* Cambia a 100% al final de la animación */
         }
     }
 </style>
 
-<script >
+<script>
     setTimeout(() => {
         const delayedText = document.getElementById('delayed-text');
         if (delayedText) {
             delayedText.classList.remove('hidden');
             delayedText.classList.add('visible');
+        }
+
+        // Cambiar el color del texto a visible después de la animación
+        const mbElement = document.querySelector('.mb-4');
+        if (mbElement) {
+            (mbElement as HTMLElement).style.webkitTextFillColor = 'rgba(255, 255, 255, 1)'; // Cambiar a blanco
         }
     }, 3700);
 </script>
