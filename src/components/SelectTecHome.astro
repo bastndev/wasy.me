@@ -1,5 +1,5 @@
-<section class="contaier flex-col">
-  <div class="mb-4 dark:text-white">
+<section class="section flex flex-col items-center">
+  <div class="tech-selector mb-4 dark:text-white">
     <a id="all" href="#All">All</a>
     <a>Api</a>
     <a>Icons</a>
@@ -14,25 +14,12 @@
 </section>
 
 <style>
-  .contaier {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .section {
     height: 700px;
   }
 
-  span {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 2px 10px;
-    border: 1px solid #191919;
-    color: rgb(0, 0, 0);
-  }
-
-  .mb-4 {
-    position: relative;
+  .tech-selector {
     text-transform: uppercase;
-    overflow: hidden;
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -40,28 +27,30 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
-  .mb-4 a {
+  .tech-selector a {
     margin-right: 4rem;
     font-size: 1.3rem;
-    /* color: var(--color-3); */
     cursor: default;
   }
-
-  a {
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  #all {
-    cursor: pointer;
-    color: #ffffff;
-  }
-
   .hidden {
     display: none;
   }
-
   .visible {
     display: block;
+  }
+
+  #all {
+    cursor: pointer;
+    color: var(--color-1);
+  }
+
+  span {
+    font-family: monospace;
+    background-color: var(--color-1);
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: 1px solid var(--color-3);
+    color: var(--color-2);
   }
 
   @keyframes animate {
@@ -83,8 +72,8 @@
       delayedText.classList.add("visible");
     }
 
-    // Cambiar el color del texto a visible después de la animación
-    const mbElement = document.querySelector(".mb-4");
+    // change color txt to visible
+    const mbElement = document.querySelector(".tech-selector");
     if (mbElement) {
       (mbElement as HTMLElement).style.webkitTextFillColor = "#1b1c23";
     }
