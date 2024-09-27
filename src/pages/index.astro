@@ -1,21 +1,21 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Search from "@/components/Search.astro";
-import GobleText from "@/components/GobleText.astro";
-import SelectTecmain from "@/components/SelectTecmain.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
+import TextPlanet from "@/components/TextPlanet.astro";
 import FlutterAstro from "@/icons/FlutterAstro.astro";
+import Search from "@/components/Search.astro";
+import SelectTecHome from "@/components/SelectTecHome.astro";
 ---
 
 <Layout title="wasy.me">
   <BgLight.Grey />
   <section class="container-logo">
-    <GobleText />
+    <TextPlanet />
     <FlutterAstro />
   </section>
   <!-- --- --- --- -- Search and select  -->
   <Search />
-  <SelectTecmain />
+  <SelectTecHome />
 
   <h1 class="dark:text-white">main</h1>
 </Layout>

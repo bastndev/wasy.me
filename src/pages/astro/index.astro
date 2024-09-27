@@ -1,16 +1,16 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { BgLight } from "@/components/layout/BackgroundLigh";
+import TextPlanet from "@/components/TextPlanet.astro";
+import AstroJs from "@/icons/AstroJs.astro";
 import Search from "@/components/Search.astro";
 import SelectTecAstro from "@/components/SelectTecAstro.astro";
-import GobleText from "@/components/GobleText.astro";
-import { BgLight } from "@/components/layout/BackgroundLigh";
-import AstroJs from "@/icons/AstroJs.astro";
 ---
 
 <Layout title="wasy.me">
   <BgLight.Orange />
   <section class="container-logo">
-    <GobleText />
+    <TextPlanet />
     <AstroJs />
   </section>
   <!-- --- --- --- -- Search and select  -->
