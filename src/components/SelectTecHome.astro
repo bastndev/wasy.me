@@ -1,91 +1,92 @@
 <section class="contaier flex-col">
-    <div class="mb-4 dark:text-white">
-        <a href="#All">All</a>
-        <a href="#Api">Api</a>
-        <a href="#Icons">Icons</a>
-        <a href="#VsCode">VsCode</a>
-        <a href="#Web">Web ex</a>
-        <a href="#Coruse">Course</a>
-        <a href="#Fonts">Fonts</a>
-    </div>
-    <div id="delayed-text" class="hidden">
-        <p class="dark:text-white">Select one <span>Tec</span></p>
-    </div>
+  <div class="mb-4 dark:text-white">
+    <a id="all" href="#All">All</a>
+    <a>Api</a>
+    <a>Icons</a>
+    <a>VsCode</a>
+    <a>Web ex</a>
+    <a>Course</a>
+    <a>Fonts</a>
+  </div>
+  <div id="delayed-text" class="hidden">
+    <p class="dark:text-white">Select one <span>Tech</span></p>
+  </div>
 </section>
 
 <style>
-    .contaier {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 700px;
-    }
+  .contaier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
 
-    span {
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
-        padding: 2px 10px;
-        border: 1px solid #191919;
-        color: rgb(0, 0, 0);
-    }
+  span {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: 1px solid #191919;
+    color: rgb(0, 0, 0);
+  }
 
-    .mb-4 {
-        position: relative;
-        text-transform: uppercase;
-        overflow: hidden;
-        background: linear-gradient(90deg, #000, #fff, #000);
-        background-repeat: no-repeat;
-        background-size: 80%;
-        animation: animate 3s linear 1 forwards; 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    }
-    .mb-4 a {
-        margin-right: 4rem;
-        font-size: 1.3rem;
-    }
+  .mb-4 {
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear 1 forwards;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  .mb-4 a {
+    margin-right: 4rem;
+    font-size: 1.3rem;
+    /* color: var(--color-3); */
+    cursor: default;
+  }
 
-    .mb-4 a:hover {
-        color: var(--color-primary);
-    }
+  a {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  #all {
+    cursor: pointer;
+    color: #ffffff;
+  }
 
-    a {
-        color: rgba(255, 255, 255, 0);
-        text-decoration: none;
-        margin-right: 20px;
-    }
+  .hidden {
+    display: none;
+  }
 
-    .hidden {
-        display: none;
-    }
+  .visible {
+    display: block;
+  }
 
-    .visible {
-        display: block;
+  @keyframes animate {
+    0% {
+      background-position: -500%;
     }
-
-    @keyframes animate {
-        0% {
-            background-position: -500%;
-        }
-        100% {
-            background-position: 500%;
-            background-size: 100%; 
-        }
+    100% {
+      background-position: 500%;
+      background-size: 100%;
     }
+  }
 </style>
 
 <script>
-    setTimeout(() => {
-        const delayedText = document.getElementById('delayed-text');
-        if (delayedText) {
-            delayedText.classList.remove('hidden');
-            delayedText.classList.add('visible');
-        }
+  setTimeout(() => {
+    const delayedText = document.getElementById("delayed-text");
+    if (delayedText) {
+      delayedText.classList.remove("hidden");
+      delayedText.classList.add("visible");
+    }
 
-        // Cambiar el color del texto a visible después de la animación
-        const mbElement = document.querySelector('.mb-4');
-        if (mbElement) {
-            (mbElement as HTMLElement).style.webkitTextFillColor = 'rgba(255, 255, 255, 1)'; // Cambiar a blanco
-        }
-    }, 3700);
+    // Cambiar el color del texto a visible después de la animación
+    const mbElement = document.querySelector(".mb-4");
+    if (mbElement) {
+      (mbElement as HTMLElement).style.webkitTextFillColor = "#1b1c23";
+    }
+  }, 3700);
 </script>
