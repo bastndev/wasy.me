@@ -1,5 +1,6 @@
 <section class="contaier flex-col">
     <div class="mb-4 dark:text-white">
+        <a href="#All">.</a>
         <a href="#All">All</a>
         <a href="#Api">Api</a>
         <a href="#Icons">Icons</a>
@@ -7,6 +8,7 @@
         <a href="#Web">Web ex</a>
         <a href="#Coruse">Course</a>
         <a href="#Fonts">Fonts</a>
+        <a href="#Fonts">.</a>
     </div>
     <div>
         <p class="dark:text-white">Select one <span>Tec</span></p>
@@ -22,15 +24,6 @@
         height: 300px;
     }
 
-    .mb-4 a {
-        margin-right: 4rem;
-        font-size: 1.5rem;
-        color: var(--color-tertiary);
-    }
-
-    /* .mb-4 a:hover {
-    } */
-
     span {
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
@@ -38,4 +31,34 @@
         border: 1px solid #191919;
         color: rgb(0, 0, 0);
     }
+    .mb-4 {
+        position: relative;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 3s linear 1;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+
+    a {
+        color: rgba(255, 255, 255, 0);
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: -500%;
+        }
+        100% {
+            background-position: 500%;
+        }
+    }
+    
 </style>
