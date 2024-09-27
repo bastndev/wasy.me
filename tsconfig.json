@@ -10,7 +10,7 @@
         "src/components/*"
       ],
       "@/icons": [
-        "src/icon/*"
+        "src/icons/*"
       ],
       "@/lib": [
         "src/lib/*"

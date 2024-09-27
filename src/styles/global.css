@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400|Jura:400");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 :root {
     --color-primary: #008cff;
-    --color-secondary: #0d0d0d;
+    --color-secondary: #f56701;
     --color-tertiary: #374151;
     --color-light: #ffffff;
     --color-dark: #000000;
@@ -13,8 +14,12 @@
     --color-3: #ffea00;
 }
 
+/* * {
+    border: solid 2px rebeccapurple;
+} */
+
 body {
-    background-image: url("/assets/img/noise.svg");
+    background-image: url("/assets/img/noise-background.svg");
     /* background-color: #000000fe; */
     font-family: "Jura", sans-serif;
     /* font-family: "Playwrite AR", cursive; */

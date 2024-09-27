@@ -1,25 +1,22 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Search from "@/components/Search.astro";
+import SelectTecAstro from "@/components/SelectTecAstro.astro";
 import Header from "@/components/Headery.astro";
-// import { Icons } from "@/icons/icons";
-import GobleText from "@/components/GobleText.astro";
-import SelectOne from "@/components/SelectOne.astro";
-import { Light } from "@/components/layout/BackgroundLigh";
 import { Icon } from "@/icons/Tech";
+// import { Light } from "@/components/layout/BackgroundLightroundLight";
+import GobleText from "@/components/GobleText.astro";
+import { Light } from "@/components/layout/BackgroundLigh";
 ---
 
 <Layout title="wasy.me">
-    <Light.Main />
+    <Light.Astro />
     <Header>
         <div class="container-logo">
             <a class="w" href="/">
                 <GobleText />
             </a>
             <div class="tec">
-                <a class="flutter" href="/flutter">
-                    <Icon.Flutter className="w-4" />
-                </a>
                 <a class="astro" href="/astro">
                     <Icon.Astro className="w-5" />
                 </a>
@@ -29,9 +26,9 @@ import { Icon } from "@/icons/Tech";
     <!-- --- --- --- -- Search  -->
     <Search />
     <!-- --- --- --- -- Selection  -->
-    <SelectOne />
+    <SelectTecAstro />
 
-    <h1 class="dark:text-white">main</h1>
+    <h1 class="dark:text-white">Astro Page</h1>
 </Layout>
 <style>
     .container-logo {
@@ -46,30 +43,16 @@ import { Icon } from "@/icons/Tech";
         background-color: red;
     }
     .tec {
+
         /* background-color: blue; */
         display: flex;
         flex-direction: column;
         align-items: start;
         width: 100px;
         height: 300px;
-        margin-top: 1rem;
-        margin-right: 0.2rem;
-    }
-    .flutter {
-        margin: 0 10px;
-        padding: 10px;
-        border: 1px solid rgb(33, 33, 33);
-        border-radius: 8px;
-        transition:
-            transform 0.5s ease,
-            box-shadow 0.5s ease;
-        margin-bottom: 2rem;
-        background: black;
-    }
-    .flutter:hover {
-        transform: translateY(-5px);
-        border: none;
-        box-shadow: 0 10px 20px rgba(0, 123, 255, 0.6);
+        
+        /* margin-top: 0rem; */
+        /* margin-right: 2rem; */
     }
     .astro {
         margin: 0 10px;
@@ -80,11 +63,14 @@ import { Icon } from "@/icons/Tech";
             transform 0.5s ease,
             box-shadow 0.5s ease;
         margin-bottom: 2rem;
-        background: black;
-    }
-    .astro:hover {
         transform: translateY(-5px);
         border: none;
         box-shadow: 0 10px 20px rgba(255, 68, 0, 0.6);
+        background: black;
     }
+    /* .astro:hover {
+        transform: translateY(-5px);
+        border: none;
+        box-shadow: 0 10px 20px rgba(255, 68, 0, 0.6);
+    } */
 </style>
