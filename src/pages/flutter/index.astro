@@ -2,29 +2,29 @@
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
 import TextPlanet from "@/components/TextPlanet.astro";
-import Flutter from "@/icons/flutter.astro";
+// import AstroJs from "@/icons/AstroJs.astro";
 import Search from "@/components/Search.astro";
-import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
+import SelectTecAstro from "@/components/SelectTecAstro.astro";
+import Flutter from "@/icons/flutter.astro";
 ---
 
 <Layout title="wasy.me">
   <BgLight.Blue />
   <section class="container-logo">
     <TextPlanet />
-    <Flutter />
+    <Flutter/>
   </section>
   <!-- --- --- --- -- Search and select  -->
   <Search />
-  <SelectTecFlutter />
+   <SelectTecAstro />
 
-  <h1 class="dark:text-white">Flutter Page</h1>
+  <h1 class="dark:text-white">Flutter page</h1>
 </Layout>
+
 <style>
   .container-logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0 4rem 0;
-    /* background-color: blue; */
+    margin: 1.5rem 0 3.5rem 5rem;
+    /* background-color: red; */
   }
 </style>
