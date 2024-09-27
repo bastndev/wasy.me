@@ -10,7 +10,7 @@
         <a href="#Fonts">Fonts</a>
         <a href="#Fonts">.</a>
     </div>
-    <div>
+    <div id="delayed-text" class="hidden">
         <p class="dark:text-white">Select one <span>Tec</span></p>
     </div>
 </section>
@@ -45,11 +45,18 @@
         -webkit-text-fill-color: rgba(255, 255, 255, 0);
     }
 
-
     a {
         color: rgba(255, 255, 255, 0);
         text-decoration: none;
         margin-right: 20px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block;
     }
 
     @keyframes animate {
@@ -60,5 +67,14 @@
             background-position: 500%;
         }
     }
-    
 </style>
+
+<script >
+    setTimeout(() => {
+        const delayedText = document.getElementById('delayed-text');
+        if (delayedText) {
+            delayedText.classList.remove('hidden');
+            delayedText.classList.add('visible');
+        }
+    }, 3700);
+</script>
