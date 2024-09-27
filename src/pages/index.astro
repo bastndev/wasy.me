@@ -1,11 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Search from "@/components/Search.astro";
-import Header from "@/components/Header.astro";
+import Header from "@/components/Headery.astro";
 import { Icons } from "@/icon/icons";
-import { Light } from "@/components/layout/Light";
-import Goble from "@/icon/goble.astro";
+import GobleText from "@/components/GobleText.astro";
 import SelectOne from "@/components/SelectOne.astro";
+import { Light } from "@/components/layout/BackgroundLigh";
 ---
 
 <Layout title="wasy.me">
@@ -13,7 +13,7 @@ import SelectOne from "@/components/SelectOne.astro";
     <Header>
         <div class="container-logo">
             <a class="w" href="/">
-                <Goble />
+                <GobleText />
             </a>
             <div class="tec">
                 <a class="flutter" href="/flutter">

@@ -2,10 +2,11 @@
 import Layout from "@/layouts/Layout.astro";
 import Search from "@/components/Search.astro";
 import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
-import Header from "@/components/Header.astro";
+import Header from "@/components/Headery.astro";
 import { Icons } from "@/icon/icons";
-import { Light } from "@/components/layout/Light";
-import Goble from "@/icon/goble.astro";
+// import { Light } from "@/components/layout/BackgroundLightroundLight";
+import GobleText from "@/components/GobleText.astro";
+import { Light } from "@/components/layout/BackgroundLigh";
 ---
 
 <Layout title="wasy.me">
@@ -13,7 +14,7 @@ import Goble from "@/icon/goble.astro";
     <Header>
         <div class="container-logo">
             <a class="w" href="/">
-                <Goble />
+                <GobleText />
             </a>
             <div class="tec">
                 <a class="flutter" href="/flutter">
