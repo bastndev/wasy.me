@@ -19,7 +19,7 @@
 } */
 
 body {
-    background-image: url("/assets/img/noise.svg");
+    background-image: url("/assets/img/noise-background.svg");
     /* background-color: #000000fe; */
     font-family: "Jura", sans-serif;
     /* font-family: "Playwrite AR", cursive; */
