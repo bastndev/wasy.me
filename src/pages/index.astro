@@ -5,6 +5,7 @@ import TextPlanet from "@/components/TextPlanet.astro";
 import FlutterAstro from "@/icons/FlutterAstro.astro";
 import Search from "@/components/Search.astro";
 import SelectTecHome from "@/components/SelectTecHome.astro";
+import Card from "@/components/Card.astro";
 ---
 
 <Layout title="wasy.me">
@@ -14,10 +15,10 @@ import SelectTecHome from "@/components/SelectTecHome.astro";
     <FlutterAstro />
   </section>
   <!-- --- --- --- -- Search and select  -->
-  <div>
+  <div class="">
     <Search />
     <SelectTecHome />
   </div>
   <!-- --- --- --- -- Card and Content -->
-  <h1 class="dark:text-white">Home</h1>
+  <Card />
 </Layout>
