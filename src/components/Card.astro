@@ -8,15 +8,17 @@ import { ALL } from "@/lib/data/index.ts";
   {
     ALL.map((index) => (
       <article class="hover:scale-105">
-        <a href={index.link} target="_blank" class="hover-link">
-          <figure class="flex items-center justify-center ">
+        <a href={index.link} target="_blank" class="index-link">
+          <figure class="flex items-center justify-center">
             <img
               class="object-cover w-[50%] aspect-square rounded-[10px]"
               src={index.img}
+              alt={index.name}
             />
             <img
               class="absolute opacity-70 transform-gpu blur-lg -z-10 block object-cover w-[70%] aspect-square transition bg-white rounded-[10px]"
               src={index.img}
+              alt={index.name}
             />
           </figure>
 
@@ -46,8 +48,8 @@ import { ALL } from "@/lib/data/index.ts";
     border-radius: 10px;
     overflow: hidden;
   }
-
-  .hover-link:hover .hover-text {
+  .index-link:hover .hover-text {
     color: white;
   }
+  /* --- --- --- Animation  */
 </style>
