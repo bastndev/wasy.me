@@ -1,5 +1,4 @@
 ---
-import { Icon } from "@/icons/Ui";
 import { ALL } from "@/lib/data/index.ts";
 ---
 
@@ -9,13 +8,8 @@ import { ALL } from "@/lib/data/index.ts";
   {
     ALL.map((index) => (
       <article class="article">
-        <div class="copy">
-          <a class="copyLink" href="#1">
-            <Icon.Copy  />
-          </a>
-        </div>
-        <div class="w-full p-[14px] rounded transition">
-          <figure class="flex items-center justify-center">
+        <a href={index.link} target="_blank" class="hover-link">
+          <figure class="flex items-center justify-center ">
             <img
               class="object-cover w-[50%] aspect-square rounded-[10px]"
               src={index.img}
@@ -25,16 +19,13 @@ import { ALL } from "@/lib/data/index.ts";
               src={index.img}
             />
           </figure>
-        </div>
-        <div class="flex justify-center items-center mb-5">
-          <a
-            class="text-[16px] font-bold text-left text-white"
-            target="_blank"
-            href={index.link}
-          >
-            {index.name}
-          </a>
-        </div>
+
+          <div class="flex justify-center items-center mt-6">
+            <h2 class="text-[16px] font-bold text-left text-white/50 hover-text">
+              {index.name}
+            </h2>
+          </div>
+        </a>
       </article>
     ))
   }
@@ -50,6 +41,7 @@ import { ALL } from "@/lib/data/index.ts";
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 190px;
     transition: all 0.3s ease;
     background-color: black;
     border: 1px solid rgba(74, 74, 74, 0.4);
@@ -58,18 +50,10 @@ import { ALL } from "@/lib/data/index.ts";
   }
 
   article:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
-  .copy {
-    width: 100%;
-    height: 50px;
-    /* background-color: ; */
-    display: flex;
-  }
-  .copyLink {
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 10px;
+
+  .hover-link:hover .hover-text {
     color: white;
   }
 </style>
