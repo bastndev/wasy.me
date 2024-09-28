@@ -2,11 +2,8 @@
 import { ALL } from "@/lib/data/index.ts";
 ---
 
-<section
-  class="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8"
->
-  {
-    ALL.map((index, i) => (
+<section class="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
+  {ALL.map((index, i) => (
       <article class={`card-animation delay-${i * 100}`}>
         <a href={index.link} target="_blank" class="index-link">
           <figure class="flex items-center justify-center relative">
@@ -23,7 +20,7 @@ import { ALL } from "@/lib/data/index.ts";
           </figure>
 
           <div class="flex justify-center items-center mt-6">
-            <h2 class="text-[16px] font-bold text-left text-white/50 ">
+            <h2 class="text-[16px] font-bold text-left text-white/50">
               {index.name}
             </h2>
           </div>
@@ -54,13 +51,13 @@ import { ALL } from "@/lib/data/index.ts";
     height: 195px;
     transition: all 0.3s ease;
     background-color: black;
-    border: 1px solid #41414166;
+    border: 1px solid rgba(65, 65, 65, 0.4);
     border-radius: 10px;
     overflow: hidden;
     opacity: 0;
     animation: slide-up 0.8s ease forwards;
   }
-  
+
   .index-link:hover h2 {
     color: white;
   }
@@ -75,20 +72,24 @@ import { ALL } from "@/lib/data/index.ts";
   .delay-700 { animation-delay: 700ms; }
   .delay-800 { animation-delay: 800ms; }
 
-  /* -- -- --- blur Effect*/
+  /* --- Blur Effect */
   .blur-effect {
     opacity: 0;
     filter: blur(0);
-    transition: all 0.9s ease;
+    transition:
+      opacity 0.9s ease,
+      filter 0.9s ease;
   }
 
   .index-link:hover .blur-effect {
     opacity: 0.5;
     filter: blur(15px);
-    transition: all 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      filter 0.3s ease;
   }
 
-  /* --- --- --- Scale logo */
+  /* --- Scale logo */
   .index-link:hover {
     transform: scale(1.05);
     transition: transform 0.4s ease;
