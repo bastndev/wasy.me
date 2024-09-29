@@ -1,9 +1,12 @@
 ---
 import { ALL } from "@/lib/data/index.ts";
+
+const { id } = Astro.params;
+const filteredTech = ALL.filter((tech) => tech.id === "astro");
 ---
 
 <section class="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
-  {ALL.map((index, i) => (
+  {filteredTech.map((index, i) => (
       <article class={`card-animation delay-${i * 100}`}>
         <a href={index.link} target="_blank" class="index-link">
           <figure class="flex items-center justify-center relative">

@@ -1,6 +1,4 @@
 ---
-const { id } = Astro.params;
-
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
 import TextPlanet from "@/components/TextPlanet.astro";
@@ -9,6 +7,7 @@ import Flutter from "@/icons/flutter.astro";
 import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
 import { FLUTTER } from "@/lib/data/flutter/data";
 
+const { id } = Astro.params;
 const filteredTech = FLUTTER.filter((tech) => tech.id === id);
 ---
 

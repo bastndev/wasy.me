@@ -6,8 +6,8 @@ import AstroJs from "@/icons/AstroJs.astro";
 import Search from "@/components/Search.astro";
 import SelectTecAstro from "@/components/SelectTecAstro.astro";
 import { ASTROJS } from "@/lib/data/astro/data";
-const { id } = Astro.params;
 
+const { id } = Astro.params;
 const filteredTech = ASTROJS.filter((tech) => tech.id === id);
 ---
 
