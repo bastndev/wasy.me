@@ -1,3 +1,16 @@
+---
+import { VERSION } from "@/lib/versions";
+
+// Filtrar la tecnología Flutter
+const filteredFlutter = VERSION.filter((tech) => tech.id === "flutter");
+const flutterVersion = filteredFlutter.length > 0 ? filteredFlutter[0].version : "N/A";
+
+// Filtrar la tecnología AstroJS
+const filteredAstro = VERSION.filter((tech) => tech.id === "astro");
+const astroVersion = filteredAstro.length > 0 ? filteredAstro[0].version : "N/A";
+
+---
+
 <div class="tagcloud-wrapper">
     <div class="tagcloud-controls" style="--num-elements: 20">
             <div class="tagcloud-control-button" style="--index: 1"><input type="radio" name="tagcloud-control-input"></div>
@@ -31,7 +44,8 @@
                     <li class="tagcloud-tag" style="--index: 6"><div><a href="/">wasy.me</a></div></li>
                     <li class="tagcloud-tag" style="--index: 7"><div><a id="astro" href="/astro">AstroJs</a></div></li>
                     <li class="tagcloud-tag" style="--index: 8"><div><a id="flutter" href="/flutter">Flutter</a></div></li>
-                    <li class="tagcloud-tag" style="--index: 9"><div><a href="/">wasy.me</a></div></li>
+                    <!-- --- --- vERSION fLUTTER -->
+                    <li class="tagcloud-tag" style="--index: 9"><div><a id="version-flutter" href="https://flutter.dev/" target="_blank">{flutterVersion}</a></div></li>
                     <li class="tagcloud-tag" style="--index: 10"><div><a id="astro" href="/astro">Astro</a></div></li>
                     <li class="tagcloud-tag" style="--index: 11"><div><a id="flutter" href="/flutter">Flutter</a></div></li>
                     <li class="tagcloud-tag" style="--index: 12"><div><a href="/">wasy.me</a></div></li>
@@ -85,7 +99,8 @@
                     <li class="tagcloud-tag" style="--index: 60"><div><a id="astro" href="/astro">AstroJs</a></div></li>
                     <li class="tagcloud-tag" style="--index: 61"><div><a href="/">wasy.me</a></div></li>
                     <li class="tagcloud-tag" style="--index: 62"><div><a id="flutter" href="/flutter">Flutter</a></div></li>
-                    <li class="tagcloud-tag" style="--index: 63"><div><a href="/">W</a></div></li>
+                    <!-- --- --- --- Version Astro  -->
+                    <li class="tagcloud-tag" style="--index: 63"><div><a id="version-astro" href="https://astro.build/" target="_blank">{astroVersion}</a></div></li>
                     <li class="tagcloud-tag" style="--index: 64"><div><a id="astro" href="/astro">AstroJs</a></div></li>
                     <li class="tagcloud-tag" style="--index: 65"><div><a href="/">w</a></div></li>
                     <li class="tagcloud-tag" style="--index: 66"><div><a href="/">wasy.me</a></div></li>
@@ -375,6 +390,20 @@
     color: var(--color-primary);
 }
 #astro:hover{
+    color: var(--color-secondary);
+}
+/* --- --- -- Versions */
+/* #version-flutter{
+    color: var(--color-primary);
+}
+#version-astro{
+    color: var(--color-secondary);
+} */
+
+#version-flutter:hover{
+    color: var(--color-primary);
+}
+#version-astro:hover{
     color: var(--color-secondary);
 }
 </style>
