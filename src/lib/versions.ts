@@ -1,4 +1,4 @@
-export const VERSIONS: VersionTech[] = [
+export const VERSION: VersionTech[] = [
   // MARK: --- -- -- wasy.me
   {
     id: "wasy",

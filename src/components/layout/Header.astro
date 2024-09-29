@@ -1,6 +1,12 @@
 ---
 import { Icon } from "@/icons/SocialMedia";
 import ThemeToggle from "../ThemeToggle.astro";
+
+import { VERSION } from "@/lib/versions";
+
+// const { id } = Astro.params;
+const filteredTech = VERSION.filter((tech) => tech.id === "wasy");
+const version = filteredTech.length > 0 ? filteredTech[0].version : "N/A";
 ---
 
 <header class="bg-transparent dark:text-white py-4">
@@ -12,7 +18,7 @@ import ThemeToggle from "../ThemeToggle.astro";
     <ThemeToggle />
 
     <a href="https://github.com/bastndev/wasy.me" target="_blank" class="flex items-center space-x-4">
-      <p class="version">v0.0.3</p>
+      <p class="version">{version}</p>
       <Icon.GitHub className="h-6 w-auto" />
     </a>
   </div>
