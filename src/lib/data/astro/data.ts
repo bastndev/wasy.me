@@ -318,17 +318,145 @@ export const ASTROJS: AstroTech[] = [
 
   // MARK: --- -- -- ICONS
   {
-    id: "icons",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "icon",
+    name: "tabler.io",
+    link: "https://tabler.io/icons",
+    img: "https://i.ibb.co/7J2Gs1F/35471246.png",
   },
   {
-    id: "icons",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "icon",
+    name: "lordicon",
+    link: "https://lordicon.com/",
+    img: "https://uploads.commoninja.com/searchengine/webflow/lordicon-animated-icons.png",
   },
+  {
+    id: "icon",
+    name: "flaticon",
+    link: "https://www.flaticon.com/",
+    img: "https://creatorwala.in/wp-content/uploads/2023/02/flaticon-8.png",
+  },
+  {
+    id: "icon",
+    name: "hugeicons",
+    link: "https://hugeicons.com/",
+    img: "https://avatars.githubusercontent.com/u/130147052?v=4",
+  },
+  {
+    id: "icon",
+    name: "svgrepo",
+    link: "https://www.svgrepo.com/",
+    img: "https://i.ibb.co/vcB7mVj/303042276-386723733607265-568017298244385725-n.png",
+  },
+  {
+    id: "icon",
+    name: "google.icons",
+    link: "https://fonts.google.com/icons",
+    img: "https://seeklogo.com/images/G/google-fonts-logo-185D843C0C-seeklogo.com.png",
+  },
+  {
+    id: "icon",
+    name: "heroicons",
+    link: "https://heroicons.com/",
+    img: "https://bestofjs.org/logos/heroicons.dark.svg",
+  },
+  {
+    id: "icon",
+    name: "atlasicons",
+    link: "https://atlasicons.vectopus.com/",
+    img: "https://cdn.ui-tools.com/Content/images/c7589ae0-atlas-icons.svg?width=210",
+  },
+  {
+    id: "icon",
+    name: "iconsax",
+    link: "https://iconsax.io/",
+    img: "https://i.ibb.co/2nBdZJ7/N4-Xfyj0u-400x400.jpg",
+  },
+  {
+    id: "icon",
+    name: "icons8",
+    link: "https://icons8.com/",
+    img: "https://i.ibb.co/DLc0Yv6/324935309-899395934709260-3838823206554241401-n.png",
+  },
+  {
+    id: "icon",
+    name: "lucide",
+    link: "https://lucide.dev/",
+    img: "https://i.ibb.co/qgB96qb/66879934.png",
+  },
+  {
+    id: "icon",
+    name: "iconscout",
+    link: "https://iconscout.com/icons",
+    img: "https://avatars.githubusercontent.com/u/24729542?s=200&v=4",
+  },
+
+  {
+    id: "icon",
+    name: "svgl",
+    link: "https://svgl.app/",
+    img: "https://i.ibb.co/fFyDYW5/Microsoft-Visual-Studio-Services-Icons.jpg",
+  },
+  {
+    id: "icon",
+    name: "svgrepo",
+    link: "https://www.svgrepo.com/",
+    img: "https://i.ibb.co/vcB7mVj/303042276-386723733607265-568017298244385725-n.png",
+  },
+  {
+    id: "icon",
+    name: "fontawesome",
+    link: "https://fontawesome.com/icons",
+    img: "https://api.getkoala.com/web/companies/fontawesome.com/logo",
+  },
+  {
+    id: "icon",
+    name: "autodraw",
+    link: "https://www.autodraw.com/",
+    img: "https://d.ibtimes.com/en/full/2524219/autodraw.webp?w=600&f=4e8334dc340fe819a19887dad33b5b6a",
+  },
+  {
+    id: "icon",
+    name: "remixicon",
+    link: "https://remixicon.com/",
+    img: "https://pub.dev/packages/remixicon/versions/1.2.0/gen-res/gen/190x190/remixIconLogo.webp",
+  },
+  {
+    id: "icon",
+    name: "simpleicons",
+    link: "https://simpleicons.org/",
+    img: "https://avatars.githubusercontent.com/u/29872746?s=200&v=4",
+  },
+  {
+    id: "icon",
+    name: "feathericons",
+    link: "https://feathericons.com/",
+    img: "https://i.ibb.co/s1vpJ0b/360-F-314108184-c-U4-UZp-To-Ers-HN1-Zjohmi9k-BRn-W10kn-WD.jpg",
+  },
+  {
+    id: "icon",
+    name: "phosphoricons",
+    link: "https://phosphoricons.com/",
+    img: "https://i.ibb.co/tDB32jr/favicon-512.png",
+  },
+  {
+    id: "icon",
+    name: "coolicons",
+    link: "https://coolicons.cool/",
+    img: "https://i.ibb.co/qdzbsM6/coolicons.jpg",
+  },
+  {
+    id: "icon",
+    name: "systemuicons",
+    link: "https://www.systemuicons.com/",
+    img: "https://i.ibb.co/mDxsSb5/systemuicons.jpg",
+  },
+  {
+    id: "icon",
+    name: "css.gg",
+    link: "https://css.gg/icon/",
+    img: "https://i.ibb.co/8K2ZKjz/292458251-554634302926864-5481387235451386199-n.png",
+  },
+
   // MARK: --- -- -- VSCODE
   {
     id: "vscode",
