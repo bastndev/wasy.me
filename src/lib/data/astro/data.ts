@@ -669,25 +669,81 @@ export const ASTROJS: AstroTech[] = [
     link: "https://marketplace.visualstudio.com/items?itemName=mcagampan.dark-horizon",
     img: "https://mcagampan.gallerycdn.vsassets.io/extensions/mcagampan/dark-horizon/0.4.2/1613284954146/Microsoft.VisualStudio.Services.Icons.Default",
   },
-  // MARK: --- -- -- WEB
+  // MARK: --- -- -- WEB-EX
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "web-ex",
+    name: "material-icons",
+    link: "https://chromewebstore.google.com/detail/material-icons-for-github/bggfcpfjbdkhfhfmkjpbhnkhnpjjeomc",
+    img: "https://pkief.gallerycdn.vsassets.io/extensions/pkief/material-icon-theme/5.11.1/1726907285902/Microsoft.VisualStudio.Services.Icons.Default",
   },
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "web-ex",
+    name: "mobile simulator",
+    link: "https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk",
+    img: "https://i.ibb.co/Ph0cT75/icon-1.png",
   },
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "web-ex",
+    name: "json viewer",
+    link: "https://chromewebstore.google.com/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc",
+    img: "https://i.ibb.co/RDGFRqJ/icon-2.png",
   },
+  {
+    id: "web-ex",
+    name: "color picker",
+    link: "https://chromewebstore.google.com/detail/web-color-picker-capturad/dneifdhdmnmmlobjbimlkcnhkbidmlek",
+    img: "https://i.ibb.co/WxzMQw2/icon.png",
+  },
+  {
+    id: "web-ex",
+    name: "Web Vitals",
+    link: "https://chromewebstore.google.com/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma?hl=en-US&utm_source=ext_sidebar",
+    img: "https://i.ibb.co/v1Sf0zK/wevital.png",
+  },
+  {
+    id: "web-ex",
+    name: "Wappalyzer",
+    link: "https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en-US&utm_source=ext_sidebar",
+    img: "https://www.wappalyzer.com/images/logo/mark-dark.png",
+  },
+  {
+    id: "web-ex",
+    name: "VisBug",
+    link: "https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en-US&utm_source=ext_sidebar",
+    img: "https://lh3.googleusercontent.com/2RZuDUyeQUWpXQ4bIjiUD7WgfVVHF9l_KFHGpKNRre_LlU0QpYQHJlFHmGtXKfsKARIOZe9YCEocsRg_O3Hwh7pZEF4=s1280-w1280-h800",
+  },
+
+  {
+    id: "web-ex",
+    name: "CSS Viewer",
+    link: "https://chromewebstore.google.com/detail/css-viewer-for-google-chr/eedfldkdghfkhdcanjnfiklpeehbfoag?hl=en-US&utm_source=ext_sidebar",
+    img: "https://i.ibb.co/3C2zgQV/icon-1.jpg",
+  },
+  {
+    id: "web-ex",
+    name: "React Developer Tools",
+    link: "https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US&utm_source=ext_sidebar",
+    img: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
+  },
+  {
+    id: "web-ex",
+    name: "Fonts Ninja",
+    link: "https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=en-US&utm_source=ext_sidebar",
+    img: "https://i.ibb.co/fn8NLVy/icon.jpg",
+  },
+  {
+    id: "web-ex",
+    name: "Web Editor",
+    link: "https://chromewebstore.google.com/detail/web-editor/pdmlhckofhkhebmcplblcijijgjiakcm?hl=en-US&utm_source=ext_sidebar",
+    img: "https://i.ibb.co/6Bk66t8/icon-2.jpg",
+  },
+  {
+    id: "web-ex",
+    name: "pagespeed",
+    link: "https://pagespeed.web.dev/",
+    img: "https://www.silomedia.co.uk/wp-content/uploads/2019/06/Google-PageSpeeds.png",
+  },
+
   // MARK: --- -- -- COURSES
   {
     id: "courses",
