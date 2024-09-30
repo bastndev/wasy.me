@@ -138,25 +138,182 @@ export const ASTROJS: AstroTech[] = [
     link: "https://uiverse.io/",
     img: "https://i.ibb.co/sqnR0SC/J7r-hsjd-400x400.png",
   },
+  {
+    id: "tool",
+    name: "app.quicktype",
+    link: "https://app.quicktype.io/",
+    img: "https://cdn-1.webcatalog.io/catalog/quicktype/quicktype-icon-filled-256.png",
+  },
 
   // MARK: --- -- -- API
   {
     id: "api",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/78917614?v=4",
+    name: "pokeapi.io",
+    link: "https://pokeapi.co/",
+    img: "https://i.ibb.co/FwjGL58/icon.jpg",
   },
   {
     id: "api",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/78917614?v=4",
+    name: "marvel",
+    link: "https://developer.marvel.com/",
+    img: "https://www.vectorkhazana.com/assets/images/products/Marvel_logo.png",
   },
   {
     id: "api",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/78917614?v=4",
+    name: "openweathermap",
+    link: "https://openweathermap.org/api",
+    img: "https://i.ibb.co/T2Z9CtY/android-app-top-banner.png",
+  },
+  {
+    id: "api",
+    name: "jsonplaceholder",
+    link: "https://jsonplaceholder.typicode.com/",
+    img: "https://i.ibb.co/w4dHB1m/icon-1.jpg",
+  },
+  {
+    id: "api",
+    name: "rickandmortyapi",
+    link: "https://rickandmortyapi.com/",
+    img: "https://repository-images.githubusercontent.com/120371205/b6740400-92d4-11ea-8a13-d5f6e0558e9b",
+  },
+  {
+    id: "api",
+    name: "api.nasa",
+    link: "https://api.nasa.gov/",
+    img: "https://cdn.mos.cms.futurecdn.net/baYs9AuHxx9QXeYBiMvSLU.jpg.webp",
+  },
+  {
+    id: "api",
+    name: "swapi",
+    link: "https://swapi.dev/",
+    img: "https://i.ibb.co/c34jMT6/icon-2.jpg",
+  },
+  {
+    id: "api",
+    name: "dog-api",
+    link: "https://dog.ceo/dog-api/",
+    img: "https://i.ibb.co/3h2PYh5/icon-3.jpg",
+  },
+
+  {
+    id: "api",
+    name: "dragonball",
+    link: "https://web.dragonball-api.com/",
+    img: "https://web.dragonball-api.com/images-compress/android-icon-192x192.webp",
+  },
+
+  {
+    id: "api",
+    name: "unsplash",
+    link: "https://unsplash.com/developers",
+    img: "https://unsplash.com/blog/content/images/max/2560/1-VnKoValwGK3-d1bZhD6sVA.jpeg",
+  },
+
+  {
+    id: "api",
+    name: "freetogame",
+    link: "https://www.freetogame.com/api-doc",
+    img: "https://i.ibb.co/RpbBndn/300449054-942698003329454-1935278351076515151-n.jpg",
+  },
+
+  {
+    id: "api",
+    name: "giphy",
+    link: "https://developers.giphy.com/",
+    img: "https://i.ibb.co/6ZXLRGG/347604286-1003361311042444-5730048407845978229-n.png",
+  },
+
+  {
+    id: "api",
+    name: "themoviedb",
+    link: "https://developer.themoviedb.org/docs/getting-started",
+    img: "https://play-lh.googleusercontent.com/ZVuzhksT-SVMPRRG_QiAurxc0Ex800HkKPRH6uFMW-akgB1Rmp11v3SuR67LklNlCA=w240-h480",
+  },
+
+  {
+    id: "api",
+    name: "frankfurter",
+    link: "https://www.frankfurter.app/",
+    img: "https://i.ibb.co/Srq1k2g/Screenshot-from-2024-09-30-11-43-41.png",
+  },
+  {
+    id: "api",
+    name: "thecocktaildb",
+    link: "https://www.thecocktaildb.com/",
+    img: "https://imgs.search.brave.com/3lQpMojsd-hbT8x3JIGAtKkWwIFR9p4Waa4UYHa8Ybo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jMS50/YWJsZWNkbi5jb20v/cGEvdGhlLWNvY2t0/YWlsLWRiLWFwaS5q/cGc",
+  },
+
+  {
+    id: "api",
+    name: "api-football",
+    link: "https://www.api-football.com/",
+    img: "https://i.ibb.co/Cmv3NbR/icon.jpg",
+  },
+
+  {
+    id: "api",
+    name: "chucknorris",
+    link: "https://api.chucknorris.io/",
+    img: "https://avatars.githubusercontent.com/u/17794049?s=200&v=4",
+  },
+
+  {
+    id: "api",
+    name: "fakestoreapi",
+    link: "https://fakestoreapi.com/",
+    img: "https://i.ibb.co/sCJWbhT/logo.png",
+  },
+
+  {
+    id: "api",
+    name: "quotes",
+    link: "https://quotes.rest/",
+    img: "https://i.ibb.co/Zx54CYb/icon-1.jpg",
+  },
+
+  {
+    id: "api",
+    name: "randomuser",
+    link: "https://randomuser.me/",
+    img: "https://www.outsystems.com/Forge_CW/_image.aspx/Q8LvY--6WakOw9afDCuuGWx8sLLzB644dIPSIUwO0gc=/randomuser-2023-01-04%2000-00-00-2024-01-31%2014-20-44",
+  },
+
+  {
+    id: "api",
+    name: "fakeapi",
+    link: "https://fakeapi.platzi.com/",
+    img: "https://i.ibb.co/Twt9hKT/logo-aa139940.webp",
+  },
+
+  {
+    id: "api",
+    name: "themealdb",
+    link: "https://www.themealdb.com/",
+    img: "https://i.ibb.co/8rTSwKC/icon-2.jpg",
+  },
+  {
+    id: "api",
+    name: "apilist",
+    link: "https://apilist.fun/",
+    img: "https://res.cloudinary.com/apideck/image/upload/w_196,f_auto/v1642055435/icons/apilist-fun.png",
+  },
+  {
+    id: "api",
+    name: "publicapis",
+    link: "https://publicapis.dev/category/anime",
+    img: "https://avatars.githubusercontent.com/u/104020680?s=200&v=4",
+  },
+  {
+    id: "api",
+    name: "publicapi",
+    link: "https://publicapi.dev/",
+    img: "https://i.ibb.co/7ybVc6P/Screenshot-from-2024-09-30-12-47-16.png",
+  },
+  {
+    id: "api",
+    name: "brave.com",
+    link: "https://brave.com/search/api/",
+    img: "https://www.drupal.org/files/project-images/brave-logo.png",
   },
 
   // MARK: --- -- -- ICONS
