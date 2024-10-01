@@ -1,16 +1,16 @@
 <section class="section flex flex-col items-center">
   <div class="tech-selector mb-4 dark:text-white">
-    <a href="/flutter/tool">Tool</a>
-    <a href="/flutter/api">Api</a>
-    <a href="/flutter/icons">Icons</a>
-    <a href="/flutter/vscode">VsCode</a>
-    <a href="/flutter/web">Web ex</a>
-    <a href="/flutter/courses">Courses</a>
-    <a href="/flutter/fonts">Fonts</a>
+    <a href="/flutter/tool" data-tech="Tool">Tool</a>
+    <a href="/flutter/api" data-tech="Api">Api</a>
+    <a href="/flutter/icons" data-tech="Icons">Icons</a>
+    <a href="/flutter/vscode" data-tech="VsCode">VsCode</a>
+    <a href="/flutter/web" data-tech="Web ex">Web ex</a>
+    <a href="/flutter/courses" data-tech="Courses">Courses</a>
+    <a href="/flutter/fonts" data-tech="Fonts">Fonts</a>
   </div>
   <div>
     <p class="dark:text-white">
-      You have selected now <span>Flutter</span>
+      You have selected now <span id="selected-tech">Flutter</span>
     </p>
   </div>
 </section>
@@ -30,6 +30,12 @@
     color: var(--color-primary);
   }
 
+  /* Styles fot text selected */
+  .selected-tech-link {
+    color: var(--color-primary) !important;
+    font-weight: bold;
+  }
+
   span {
     font-family: monospace;
     background-color: var(--color-primary);
@@ -39,3 +45,45 @@
     color: var(--color-2);
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectedTechElement = document.getElementById("selected-tech");
+    const savedTech = localStorage.getItem("selectedTech");
+
+    if (savedTech && selectedTechElement) {
+      selectedTechElement.textContent = savedTech;
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        if (link.getAttribute("data-tech") === savedTech) {
+          link.classList.add("selected-tech-link");
+        }
+      });
+    }
+  });
+
+  document.querySelectorAll(".tech-selector a").forEach((link) => {
+    link.addEventListener("click", function (this: HTMLAnchorElement, event) {
+      event.preventDefault();
+      const selectedTech = this.getAttribute("data-tech");
+      const selectedTechElement = document.getElementById("selected-tech");
+
+      if (selectedTechElement) {
+        selectedTechElement.textContent = selectedTech;
+        if (selectedTech) {
+          localStorage.setItem("selectedTech", selectedTech);
+        }
+      }
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        link.classList.remove("selected-tech-link");
+      });
+
+      this.classList.add("selected-tech-link");
+
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 100);
+    });
+  });
+</script>
