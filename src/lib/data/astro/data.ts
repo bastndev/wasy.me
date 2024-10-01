@@ -385,7 +385,6 @@ export const ASTROJS: AstroTech[] = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYTnNA50s1M_RemNvCNrEvzwLbKiI6IsEgA&s",
   },
 
-
   // MARK: --- -- -- ICONS
   {
     id: "icon",
