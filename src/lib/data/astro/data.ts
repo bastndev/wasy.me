@@ -2,9 +2,21 @@ export const ASTROJS: AstroTech[] = [
   // MARK: --- -- -- TOOL
   {
     id: "tool",
-    name: "9elements.github.io",
-    link: "https://9elements.github.io/fancy-border-radius/",
-    img: "https://i.ibb.co/VTZFPqM/apple-touch-icon.png",
+    name: "squoosh.app",
+    link: "https://squoosh.app/",
+    img: "https://iconape.com/wp-content/files/lz/341438/png/squoosh-logo.png",
+  },
+  {
+    id: "tool",
+    name: "shots.so",
+    link: "https://shots.so/",
+    img: "https://i.ibb.co/HP3McHW/RTP0-Jy3-400x400.jpg",
+  },
+  {
+    id: "tool",
+    name: "imgbb",
+    link: "https://imgbb.com/",
+    img: "https://i.ibb.co/vJ3C9NW/orig.png",
   },
   {
     id: "tool",
@@ -56,6 +68,12 @@ export const ASTROJS: AstroTech[] = [
   },
   {
     id: "tool",
+    name: "9elements.github.io",
+    link: "https://9elements.github.io/fancy-border-radius/",
+    img: "https://i.ibb.co/VTZFPqM/apple-touch-icon.png",
+  },
+  {
+    id: "tool",
     name: "headlessui",
     link: "https://headlessui.com/",
     img: "https://bestofjs.org/logos/headlessui.dark.svg",
@@ -65,12 +83,6 @@ export const ASTROJS: AstroTech[] = [
     name: "hype4.academy",
     link: "https://hype4.academy/tools",
     img: "https://i.ibb.co/6ZwJrhy/Q8-EDc-Aw-400x400.jpg",
-  },
-  {
-    id: "tool",
-    name: "imgbb",
-    link: "https://imgbb.com/",
-    img: "https://i.ibb.co/vJ3C9NW/orig.png",
   },
   {
     id: "tool",
@@ -107,18 +119,6 @@ export const ASTROJS: AstroTech[] = [
     name: "netlify",
     link: "https://www.netlify.com/",
     img: "https://i.ibb.co/K5hg3zF/images.png",
-  },
-  {
-    id: "tool",
-    name: "shots.so",
-    link: "https://shots.so/",
-    img: "https://i.ibb.co/HP3McHW/RTP0-Jy3-400x400.jpg",
-  },
-  {
-    id: "tool",
-    name: "squoosh.app",
-    link: "https://squoosh.app/",
-    img: "https://iconape.com/wp-content/files/lz/341438/png/squoosh-logo.png",
   },
   {
     id: "tool",
@@ -378,6 +378,13 @@ export const ASTROJS: AstroTech[] = [
     link: "https://docs.mistral.ai/api/",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7wxX2QJ1xaXZ_Z4n1UMxu50RhROPykQcnQ&s",
   },
+  {
+    id: "api",
+    name: "spotify",
+    link: "https://developer.spotify.com/documentation/web-api",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYTnNA50s1M_RemNvCNrEvzwLbKiI6IsEgA&s",
+  },
+
 
   // MARK: --- -- -- ICONS
   {
