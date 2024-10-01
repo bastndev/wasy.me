@@ -257,21 +257,18 @@ export const ASTROJS: AstroTech[] = [
     link: "https://www.freetogame.com/api-doc",
     img: "https://i.ibb.co/RpbBndn/300449054-942698003329454-1935278351076515151-n.jpg",
   },
-
   {
     id: "api",
     name: "giphy",
     link: "https://developers.giphy.com/",
     img: "https://i.ibb.co/6ZXLRGG/347604286-1003361311042444-5730048407845978229-n.png",
   },
-
   {
     id: "api",
     name: "themoviedb",
     link: "https://developer.themoviedb.org/docs/getting-started",
     img: "https://play-lh.googleusercontent.com/ZVuzhksT-SVMPRRG_QiAurxc0Ex800HkKPRH6uFMW-akgB1Rmp11v3SuR67LklNlCA=w240-h480",
   },
-
   {
     id: "api",
     name: "frankfurter",
