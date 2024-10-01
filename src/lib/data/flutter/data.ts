@@ -610,9 +610,9 @@ export const FLUTTER: FlutterTech[] = [
   },
   {
     id: "vs-code",
-    name: "complete",
-    link: "https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.complete-flutter-extension-pack",
-    img: "https://gulajavaministudio.gallerycdn.vsassets.io/extensions/gulajavaministudio/complete-flutter-extension-pack/1.1.0/1595659563125/Microsoft.VisualStudio.Services.Icons.Default",
+    name: "riverpod-snippets",
+    link: "https://marketplace.visualstudio.com/items?itemName=robert-brunhage.flutter-riverpod-snippets",
+    img: "https://robert-brunhage.gallerycdn.vsassets.io/extensions/robert-brunhage/flutter-riverpod-snippets/1.2.2/1678168910868/Microsoft.VisualStudio.Services.Icons.Default",
   },
   {
     id: "vs-code",
@@ -742,9 +742,9 @@ export const FLUTTER: FlutterTech[] = [
   },
   {
     id: "vs-code",
-    name: "riverpod-snippets",
-    link: "https://marketplace.visualstudio.com/items?itemName=robert-brunhage.flutter-riverpod-snippets",
-    img: "https://robert-brunhage.gallerycdn.vsassets.io/extensions/robert-brunhage/flutter-riverpod-snippets/1.2.2/1678168910868/Microsoft.VisualStudio.Services.Icons.Default",
+    name: "complete",
+    link: "https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.complete-flutter-extension-pack",
+    img: "https://gulajavaministudio.gallerycdn.vsassets.io/extensions/gulajavaministudio/complete-flutter-extension-pack/1.1.0/1595659563125/Microsoft.VisualStudio.Services.Icons.Default",
   },
   {
     id: "vs-code",
@@ -753,25 +753,367 @@ export const FLUTTER: FlutterTech[] = [
     img: "https://i.ibb.co/Nm89GW2/icon-2.png",
   },
 
-  // MARK: --- -- -- WEB
+  // MARK: --- -- -- PACKAGE
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "package",
+    name: "go_router",
+    link: "https://pub.dev/packages/go_router",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "package",
+    name: "dio",
+    link: "https://pub.dev/packages/dio",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "provider",
+    link: "https://pub.dev/packages/provider",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "flutter_bloc",
+    link: "https://pub.dev/packages/flutter_bloc",
+    img: "https://pub.dev/packages/flutter_bloc/versions/8.1.6/gen-res/gen/190x190/logo.webp",
+  },
+
+  {
+    id: "package",
+    name: "equatable",
+    link: "https://pub.dev/packages/equatable",
+    img: "https://i.ibb.co/2q9RKCF/Screenshot-from-2024-10-01-17-21-55.png",
+  },
+
+  {
+    id: "package",
+    name: "shared_preferences",
+    link: "https://pub.dev/packages/shared_preferences",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "path_provider",
+    link: "https://pub.dev/packages/path_provider",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "intl",
+    link: "https://pub.dev/packages/intl",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "cached_network_image",
+    link: "https://pub.dev/packages/cached_network_image",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "sqflite",
+    link: "https://pub.dev/packages/sqflite",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "get_it",
+    link: "https://pub.dev/packages/get_it",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "get",
+    link: "https://pub.dev/packages/get",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
   {
-    id: "web",
-    name: "Lucas Mantilla",
-    link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
-    img: "https://avatars.githubusercontent.com/u/112582162?v=4",
+    id: "package",
+    name: "cloud_firestore",
+    link: "https://pub.dev/packages/cloud_firestore",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
+
+  {
+    id: "package",
+    name: "flutter_local_notifications",
+    link: "https://pub.dev/packages/flutter_local_notifications",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "google_fonts",
+    link: "https://pub.dev/packages/google_fonts",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "lottie",
+    link: "https://pub.dev/packages/lottie",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "url_launcher",
+    link: "https://pub.dev/packages/url_launcher",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "flutter_svg",
+    link: "https://pub.dev/packages/flutter_svg",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "animations",
+    link: "https://pub.dev/packages/animations",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "carousel_slider",
+    link: "https://pub.dev/packages/carousel_slider",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "permission_handler",
+    link: "https://pub.dev/packages/permission_handler",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "image_picker",
+    link: "https://pub.dev/packages/image_picker",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "flutter_webview_plugin",
+    link: "https://pub.dev/packages/flutter_webview_plugin",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
+  {
+    id: "package",
+    name: "razorpay_flutter",
+    link: "https://pub.dev/packages/razorpay_flutter",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "in_app_purchase",
+    link: "https://pub.dev/packages/in_app_purchase",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "connectivity_plus",
+    link: "https://pub.dev/packages/connectivity_plus",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_hooks",
+    link: "https://pub.dev/packages/flutter_hooks",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "riverpod",
+    link: "https://pub.dev/packages/riverpod",
+    img: "https://riverpod.dev/img/logo.svg",
+  },
+  {
+    id: "package",
+    name: "flutter_riverpod",
+    link: "https://pub.dev/packages/flutter_riverpod",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "hooks_riverpod",
+    link: "https://pub.dev/packages/hooks_riverpod",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_native_splash",
+    link: "https://pub.dev/packages/flutter_native_splash",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "auto_route",
+    link: "https://pub.dev/packages/auto_route",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_lints",
+    link: "https://pub.dev/packages/flutter_lints",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_meedu",
+    link: "https://pub.dev/packages/flutter_meedu",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "fluent_ui",
+    link: "https://pub.dev/packages/fluent_ui",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_rive",
+    link: "https://pub.dev/packages/flutter_rive",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "remixicon",
+    link: "https://pub.dev/packages/remixicon",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "awesome_notifications",
+    link: "https://pub.dev/packages/awesome_notifications",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "motion_sensors",
+    link: "https://pub.dev/packages/motion_sensors",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "adaptive_theme",
+    link: "https://pub.dev/packages/adaptive_theme",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutter_modular",
+    link: "https://pub.dev/packages/flutter_modular",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "beamer",
+    link: "https://pub.dev/packages/beamer",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "dart_code_metrics",
+    link: "https://pub.dev/packages/dart_code_metrics",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "jiffy",
+    link: "https://pub.dev/packages/",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "drift",
+    link: "https://pub.dev/packages/drift",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "ffmpeg_kit_flutter",
+    link: "https://pub.dev/packages/ffmpeg_kit_flutter",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "flutterfire_ui",
+    link: "https://pub.dev/packages/flutterfire_ui",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "slang",
+    link: "https://pub.dev/packages/slang",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  // -----SUPABASE TODO:
+  {
+    id: "package",
+    name: "supabase_flutter",
+    link: "https://pub.dev/packages/supabase_flutter",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "supabase_auth_ui ",
+    link: "https://pub.dev/packages/supabase_auth_ui",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  // ------ FIREBASE TODO:
+  {
+    id: "package",
+    name: "firebase_core",
+    link: "https://pub.dev/packages/firebase_core",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "firebase_auth",
+    link: "https://pub.dev/packages/firebase_auth",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "cloud_firestore",
+    link: "https://pub.dev/packages/cloud_firestore",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "firebase_storage",
+    link: "https://pub.dev/packages/firebase_storage",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "firebase_messaging",
+    link: "https://pub.dev/packages/firebase_messaging",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "firebase_analytics",
+    link: "https://pub.dev/packages/firebase_analytics",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+
   // MARK: --- -- -- COURSES
   {
     id: "courses",
