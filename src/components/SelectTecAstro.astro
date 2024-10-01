@@ -1,18 +1,17 @@
 <section class="section flex flex-col items-center justify-center text-center">
   <div class="tech-selector mb-4 dark:text-white">
-    <a href="/"></a>
-    <a href="/astro/tool">Tool</a>
-    <a href="/astro/api">Api</a>
-    <a href="/astro/icon">Icon</a>
-    <a href="/astro/vscode">Vs-Code</a>
-    <a href="/astro/web-ex">Web-ex</a>
-    <a href="/astro/ui">Ui</a>
-    <a href="/astro/font">Font</a>
-    <a href="/astro/ai">Ai</a>
+    <a href="/astro/tool" data-tech="Tool">Tool</a>
+    <a href="/astro/api" data-tech="Api">Api</a>
+    <a href="/astro/icon" data-tech="Icon">Icon</a>
+    <a href="/astro/vscode" data-tech="Vs-Code">Vs-Code</a>
+    <a href="/astro/web-ex" data-tech="Web-ex">Web-ex</a>
+    <a href="/astro/ui" data-tech="Ui">Ui</a>
+    <a href="/astro/font" data-tech="Font">Font</a>
+    <a href="/astro/ai" data-tech="Ai">Ai</a>
   </div>
   <div>
     <p class="dark:text-white">
-      You have selected now <span>Astro</span>
+      You have selected now <span id="selected-tech">Astro</span>
     </p>
   </div>
 </section>
@@ -30,6 +29,12 @@
     color: var(--color-secondary);
   }
 
+  /* Styles fot text selected */
+  .selected-tech-link {
+    color: var(--color-secondary) !important;
+    font-weight: bold;
+  }
+
   span {
     font-family: monospace;
     background-color: var(--color-secondary);
@@ -39,3 +44,45 @@
     color: var(--color-2);
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectedTechElement = document.getElementById("selected-tech");
+    const savedTech = localStorage.getItem("selectedTech");
+
+    if (savedTech && selectedTechElement) {
+      selectedTechElement.textContent = savedTech;
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        if (link.getAttribute("data-tech") === savedTech) {
+          link.classList.add("selected-tech-link");
+        }
+      });
+    }
+  });
+
+  document.querySelectorAll(".tech-selector a").forEach((link) => {
+    link.addEventListener("click", function (this: HTMLAnchorElement, event) {
+      event.preventDefault();
+      const selectedTech = this.getAttribute("data-tech");
+      const selectedTechElement = document.getElementById("selected-tech");
+
+      if (selectedTechElement) {
+        selectedTechElement.textContent = selectedTech;
+        if (selectedTech) {
+          localStorage.setItem("selectedTech", selectedTech);
+        }
+      }
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        link.classList.remove("selected-tech-link");
+      });
+
+      this.classList.add("selected-tech-link");
+
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 100);
+    });
+  });
+</script>
