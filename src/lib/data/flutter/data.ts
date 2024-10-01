@@ -1036,7 +1036,7 @@ export const FLUTTER: FlutterTech[] = [
   {
     id: "package",
     name: "jiffy",
-    link: "https://pub.dev/packages/",
+    link: "https://pub.dev/packages/jiffy",
     img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
   {
@@ -1111,6 +1111,12 @@ export const FLUTTER: FlutterTech[] = [
     id: "package",
     name: "firebase_analytics",
     link: "https://pub.dev/packages/firebase_analytics",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
+  },
+  {
+    id: "package",
+    name: "mobx",
+    link: "https://pub.dev/packages/mobx",
     img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
 
