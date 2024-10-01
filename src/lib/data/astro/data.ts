@@ -162,6 +162,12 @@ export const ASTROJS: AstroTech[] = [
     link: "https://www.postman.com/",
     img: "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
   },
+  {
+    id: "tool",
+    name: "ui.ibelick",
+    link: "https://ui.ibelick.com/",
+    img: "https://i.ibb.co/kGGWtym/Screenshot-from-2024-09-30-21-57-02.png",
+  },
 
   // MARK: --- -- -- API
   {
@@ -856,7 +862,93 @@ export const ASTROJS: AstroTech[] = [
 
   // MARK: --- -- -- FONTS
   {
-    id: "fonts",
+    id: "font",
+    name: "fontsource",
+    link: "https://fontsource.org/",
+    img: "https://avatars.githubusercontent.com/u/68393903?s=200&v=4",
+  },
+  {
+    id: "font",
+    name: "fonts.google",
+    link: "https://fonts.google.com/",
+    img: "https://static.vecteezy.com/system/resources/previews/025/732/714/non_2x/google-fonts-logo-icon-free-vector.jpg",
+  },
+  {
+    id: "font",
+    name: "1001freefonts",
+    link: "https://www.1001freefonts.com/",
+    img: "https://i.ibb.co/P6ZkYyy/icon-1.jpg",
+  },
+  {
+    id: "font",
+    name: "fonts.adobe",
+    link: "https://fonts.adobe.com/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-EdLGRO6AGsxXEFAEYtq2Sn9Nl031-09Wg&s",
+  },
+  {
+    id: "font",
+    name: "theleagueof...",
+    link: "https://www.theleagueofmoveabletype.com/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWkSRBEGYref38CkNt1knthrSrJTHUKe9-w&s",
+  },
+  {
+    id: "font",
+    name: "fontmeme",
+    link: "https://fontmeme.com/fonts/",
+    img: "https://i.ibb.co/ThchDFV/icon.jpg",
+  },
+  {
+    id: "font",
+    name: "losttype",
+    link: "https://www.losttype.com/browse/",
+    img: "https://i.pinimg.com/564x/13/1a/5e/131a5e59a0dfa286bde1514fe9cf53d2.jpg",
+  },
+  {
+    id: "font",
+    name: "fontsquirrel",
+    link: "https://www.fontsquirrel.com/",
+    img: "https://www.fontsquirrel.com/presentation/theme_site/images/social_media_default.jpg",
+  },
+  {
+    id: "font",
+    name: "fontfabric",
+    link: "https://www.fontfabric.com/fonts/",
+    img: "https://www.ui-tools.com/Content/images/fontfabric.svg",
+  },
+  {
+    id: "font",
+    name: "1001fonts",
+    link: "https://www.1001fonts.com/",
+    img: "https://play-lh.googleusercontent.com/xLnYfvYOEiojcOFXXgGT4tBgl3SQqh-cmbi0HLlcFit7yNW_UMSbIxx01f7w45dR-jXK=w240-h480-rw",
+  },
+  {
+    id: "font",
+    name: "dafontfree",
+    link: "https://www.dafontfree.io/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kHQsOgx4L5_UG3Q_kh9seWN4SVk1hoawMw&s",
+  },
+  {
+    id: "font",
+    name: "es.ffonts",
+    link: "https://es.ffonts.net/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzG3zExxHPxRmWrkd8URqIN0nHmThYW6qMuw&s",
+  },
+  {
+    id: "font",
+    name: "font.download",
+    link: "https://font.download/",
+    img: "https://i.ibb.co/6bQNRNV/icon-2.jpg",
+  },
+  {
+    id: "font",
+    name: "fonts2u",
+    link: "https://es.fonts2u.com/",
+    img: "https://s.fonts2u.com/i/f2u-social.jpg",
+  },
+
+  // MARK: --- -- -- AI
+  {
+    id: "ai",
     name: "Lucas Mantilla",
     link: "https://www.youtube.com/watch?v=WRc8lz-bp78&t=9154s",
     img: "https://avatars.githubusercontent.com/u/112582162?v=4",
