@@ -357,6 +357,30 @@ export const ASTROJS: AstroTech[] = [
     link: "https://brave.com/search/api/",
     img: "https://www.drupal.org/files/project-images/brave-logo.png",
   },
+  {
+    id: "api",
+    name: "openai.api",
+    link: "https://openai.com/index/openai-api/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2d3IW4R8PR4TO7Va-lOAV6PrrYh250bqJpw&s",
+  },
+  {
+    id: "api",
+    name: "gemini-api",
+    link: "https://ai.google.dev/",
+    img: "https://images.ctfassets.net/lzny33ho1g45/zrujZF8FP9VsL1SMT28wp/73b548de0687b49d8ab7e98667bf62fb/gemini.jpg?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+  },
+  {
+    id: "api",
+    name: "llama-api",
+    link: "https://www.llama-api.com/",
+    img: "https://mintlify.s3-us-west-1.amazonaws.com/llama-api/logo/light.png",
+  },
+  {
+    id: "api",
+    name: "mistral",
+    link: "https://docs.mistral.ai/api/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7wxX2QJ1xaXZ_Z4n1UMxu50RhROPykQcnQ&s",
+  },
 
   // MARK: --- -- -- ICONS
   {
@@ -1163,6 +1187,18 @@ export const ASTROJS: AstroTech[] = [
     name: "mutable",
     link: "https://mutable.ai/",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhzfW0xBP0XMroUmC6myN0nSWFVXQz-uZmg&s",
+  },
+  {
+    id: "ai",
+    name: "replit",
+    link: "https://replit.com/ai",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBzrH8h5BtWFOpy563fMsioRugpg3IhOU4w&s",
+  },
+  {
+    id: "ai",
+    name: "huggingface",
+    link: "https://huggingface.co/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSal3iqGzA3Qy23n2P7Q5SLPavlq1QwK-Bfow&s",
   },
 ];
 
