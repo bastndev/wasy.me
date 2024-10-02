@@ -1,41 +1,113 @@
 ---
+import { Icon } from "../../icons/SocialMedia";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-white py-8">
-    <div class="line"></div>
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <a href="/" class="text-2xl font-bold">wasy.me</a>
-            </div>
-            <div class="flex space-x-4">
-                <a href="/about" class="hover:underline">About</a>
-                <a href="/blog" class="hover:underline">Blog</a>
-                <a href="/contact" class="hover:underline">Contact</a>
-                <a href="/privacy" class="hover:underline">Privacy Policy</a>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-sm text-gray-500">
-            &copy; {currentYear} @bastndev
-        </div>
+<div class="line"></div>
+<footer class="footer bg-gray-900 text-white">
+  <div class="me">
+    <div class="social">
+      <a href="https://x.com/wasy_me " target="_blank" class="link">
+        <Icon.Twitter className="w-6" />
+      </a>
     </div>
-</footer>
+    <p style="color: #818181; font-size: smaller">
+      {currentYear} © All Rights Reserved
+    </p>
+  </div>
 
+  <div class="col">
+    <p style="color: #ffffff;">About</p>
+    <p>Privacy Policy</p>
+    <p>Terms of service</p>
+  </div>
+
+  <div class="buyme">
+    <p>Do you feel like supporting my work? 🙂</p>
+    <a href="https://buymeacoffee.com/bastndev" target="_blank">
+      <img src="/assets/img/buymeacoffee.svg" alt="" />
+    </a>
+  </div>
+</footer>
+<!-- MARK: Style -->
 <style>
-    footer {
-        background-color: #010101;
-        color: #fff;
+  .buyme {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1e1e1e;
+    background: #0d0d0d66;
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+  .buyme:hover {
+    border: 1px solid #ffe600a8;
+  }
+  .buyme p {
+    margin-right: 1rem;
+  }
+  .buyme img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+  }
+  .buyme img:hover {
+    filter: grayscale(0%);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000e0;
+    color: white;
+    padding: 2rem;
+    position: relative;
+  }
+  .name {
+    font-size: 1.5rem;
+    color: #d1d1d1;
+  }
+  .social {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .social a {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+  .social a:hover {
+    background: #0d0d0d;
+    /* color: var(--color-primary); */
+  }
+  .col {
+    background: #0d0d0d66;
+    padding: 1.8rem 14rem 1.8rem 2rem;
+    border-radius: 20px;
+  }
+  .col,
+  p {
+    color: #8f8f8f;
+  }
+  /* -- --- --- selection  */
+  h3::selection,
+  p::selection,
+  span::selection,
+  a::selection {
+    background-color: var(--color-secondary);
+  }
+  /* --- --- ---FIXME: responsive mobile */
+  @media (max-width: 768px) {
+    .footer {
+      display: none;
     }
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    .line {
-        height: 1px;
-        background-color: #1e1e1e;
-    }
+  }
+
+  .line {
+    height: 1px;
+    background-color: #1e1e1e;
+  }
 </style>
