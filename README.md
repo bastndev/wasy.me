@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<a href="http://wasy.me/">
+<a href="https://x.com/wasy_me">
   <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPNFFAD4H7NCGVF3JGUZX54D2Q" alt="Logo" />
 </a>
 
@@ -65,7 +65,7 @@ Here’s a quick guide:
 6. Push to the branch (`git push origin feature/AmazingFeature`).
 7. Open a [_pull request_](https://github.com/bastndev/wasy.me/pulls).
 
-Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blob/master/CONTRIBUTING.md) to get started in the best way and follow good practices.
+Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blob/main/Contributors.md) to get started in the best way and follow good practices.
 
 ### Buy a Coffee
 
