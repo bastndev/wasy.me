@@ -2,7 +2,7 @@ export const VERSION: VersionTech[] = [
   // MARK: --- -- -- wasy.me
   {
     id: "wasy",
-    version: "v0.0.5",
+    version: "v0.1.0",
   },
   // MARK: --- -- -- Flutter
   {

@@ -1,41 +1,111 @@
 ---
+import { Icon } from "../../icons/SocialMedia";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-white py-8">
-    <div class="line"></div>
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <a href="/" class="text-2xl font-bold">wasy.me</a>
-            </div>
-            <div class="flex space-x-4">
-                <a href="/about" class="hover:underline">About</a>
-                <a href="/blog" class="hover:underline">Blog</a>
-                <a href="/contact" class="hover:underline">Contact</a>
-                <a href="/privacy" class="hover:underline">Privacy Policy</a>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-sm text-gray-500">
-            &copy; {currentYear} @bastndev
-        </div>
+<div class="h-px bg-[#161616]"></div>
+<footer
+  class="flex justify-around items-center bg-black p-8 relative text-[#8f8f8f]"
+>
+  <div class="wasy-me">
+    <div class="social-media">
+      <a href="https://x.com/wasy_me " target="_blank">
+        <Icon.Twitter className="w-6" />
+      </a>
     </div>
-</footer>
+    <p style="color: #818181; font-size: smaller">
+      {currentYear} © All Rights Reserved
+    </p>
+  </div>
 
+  <div class="about">
+    <p style="color: #ffffff;">About</p>
+    <p>Privacy Policy</p>
+    <p>Terms of service</p>
+  </div>
+
+  <div class="buyme">
+    <p>Do you feel like supporting my work? 🙂</p>
+    <a href="https://buymeacoffee.com/bastndev" target="_blank">
+      <img src="/assets/img/buymeacoffe.webp" alt="" />
+    </a>
+  </div>
+</footer>
+<!-- MARK: Style -->
 <style>
+  /* --- -- -- --  Solical Media */
+  .social-media {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .social-media a {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    transition: all 0.1s ease;
+  }
+  .social-media a:hover {
+    background: #0d0d0d;
+  }
+  /* -- -- -- -- -- about */
+  .about {
+    padding: 1.5rem 14rem 1.5rem 2rem;
+    border-radius: 20px;
+    background: #0c0c0c2d;
+  }
+
+  /* -- --- --- selection  */
+  .about::selection,
+  h3::selection,
+  p::selection,
+  span::selection,
+  a::selection {
+    background-color: var(--color-2);
+  }
+  /* ------------------- BUY ME A COFFE */
+  .buyme {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1e1e1e;
+    background: #0d0d0d66;
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+  .buyme:hover {
+    border: 1px solid #ffe600a8;
+    cursor: none;
+  }
+  .buyme p {
+    margin-right: 1rem;
+  }
+  .buyme img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+  }
+  .buyme img:hover {
+    filter: grayscale(0%);
+  }
+  /* -- --- -- -- -- - FIXME: responsive Mobile */
+  @media (max-width: 768px) {
     footer {
-        background-color: #010101;
-        color: #fff;
+      flex-direction: column;
     }
-    a {
-        color: #fff;
-        text-decoration: none;
+    .social-media {
+      display: flex;
+      justify-content: center;
     }
-    a:hover {
-        text-decoration: underline;
+    .social-media a {
+      margin-left: 1rem;
     }
-    .line {
-        height: 1px;
-        background-color: #1e1e1e;
+    .about {
+      display: none;
     }
+    .buyme {
+      display: none;
+    }
+  }
 </style>

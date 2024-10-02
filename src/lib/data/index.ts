@@ -86,7 +86,7 @@ export const ALL: AllTechIndex[] = [
   },
   {
     id: "flutter",
-    name: "bloc",
+    name: "bloc ex..",
     link: "https://marketplace.visualstudio.com/items?itemName=FelixAngelov.bloc",
     img: "https://i.ibb.co/9nhYSH1/icon-2-1.png",
   },
@@ -235,6 +235,12 @@ export const ALL: AllTechIndex[] = [
     name: "errorlens",
     link: "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens",
     img: "https://usernamehw.gallerycdn.vsassets.io/extensions/usernamehw/errorlens/3.20.0/1719044874383/Microsoft.VisualStudio.Services.Icons.Default",
+  },
+  {
+    id: "astro",
+    name: "responsively",
+    link: "https://responsively.app/download",
+    img: "https://camo.githubusercontent.com/07f1eb5bc22d00c16512af2e8ba046157ba7da09992b6f34a70b624914d69682/68747470733a2f2f726573706f6e736976656c792e6170702f6173736574732f696d672f6c6f676f2e706e67",
   },
   {
     id: "astro",

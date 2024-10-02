@@ -1,54 +1,89 @@
-# Astro Starter Kit: Basics
+<a name="readme-top"></a>
 
-```sh
-npm create astro@latest -- --template basics
-```
+<div align="center">
+<a href="http://wasy.me/">
+  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPNFFAD4H7NCGVF3JGUZX54D2Q" alt="Logo" />
+</a>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## wasy.me
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+All the tools 🛠️ you need as a developer, in one place.\
+[Report error](https://github.com/bastndev/wasy.me/issues)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+</div>
 
-## 🚀 Project Structure
+## Screenshot Mobile-web
 
-Inside of your Astro project, you'll see the following folders and files:
+![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPNMRF7AH4YOM5L4LCWZX533NA)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+> [!IMPORTANT]
+> This is project use last version of astroJS v5.0 BETA
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+  ```sh
+  npm create astro@latest -- --ref next
+  ```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Installation
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. download or clone project
 
-## 🧞 Commands
+  ```sh
+  https://github.com/bastndev/wasy.me.git
+  ```
 
-All commands are run from the root of the project, from a terminal:
+2. install package
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+  ```sh
+  npm install install
+  ```
 
-## 👀 Want to learn more?
+- o NPM
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+  ```sh
+  npm install i
+  ```
+
+3. start project
+
+   ```sh
+   pnpm run dev
+   ```
+
+## Contribute to the Project
+
+Contributions are what make the open-source community an incredible place to learn, inspire, and create. Any contribution you make is **greatly appreciated**!
+
+If you have a suggestion that could improve the project, please [_fork_](https://github.com/bastndev/wasy.me/fork) the repository and create a [_pull request_](https://github.com/bastndev/wasy.me/pulls). You can also simply open an [_issue_](https://github.com/bastndev/wasy.me/issues) with the "enhancement" label.
+
+Here’s a quick guide:
+
+1. Fork the project [_here_](https://github.com/bastndev/wasy.me/fork).
+2. Clone your fork (`git clone <fork URL>`).
+3. Add the original repository as a remote (`git remote add upstream <original repository URL>`).
+4. Create your feature branch (`git switch -c feature/AmazingFeature`).
+5. Make your changes (`git commit -m 'Add: some AmazingFeature'`).
+6. Push to the branch (`git push origin feature/AmazingFeature`).
+7. Open a [_pull request_](https://github.com/bastndev/wasy.me/pulls).
+
+Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blob/master/CONTRIBUTING.md) to get started in the best way and follow good practices.
+
+### Buy a Coffee
+
+If you want to contribute in a simpler way, you can buy us a coffee.
+
+[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/img/buymeacoffe.webp?token=GHSAT0AAAAAACV3BFPMKB4PMDK4TCXLTCQ2ZX54ATA)](https://buymeacoffee.com/bastndev)
+
+## 🛠️ Stack
+
+- [![Astro][astro-badge]][astro-url] - The web framework for content-driven websites.
+- [![Typescript][typescript-badge]][typescript-url] - JavaScript with syntax for types.
+- [![Tailwind CSS][tailwind-badge]][tailwind-url] - A utility-first CSS framework for rapidly building custom designs.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[astro-url]: https://astro.build/
+[typescript-url]: https://www.typescriptlang.org/
+[tailwind-url]: https://tailwindcss.com/
+[astro-badge]: https://img.shields.io/badge/Astro-fff?style=for-the-badge&logo=astro&logoColor=bd303a&color=352563
+[typescript-badge]: https://img.shields.io/badge/Typescript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&color=blue
+[tailwind-badge]: https://img.shields.io/badge/Tailwind-ffffff?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8

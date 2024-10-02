@@ -8,7 +8,7 @@
     <a>Course</a>
     <a>Fonts</a>
   </div>
-  <div id="delayed-text" class="hidden">
+  <div id="delayed-text" class="fade-in">
     <p class="dark:text-white">Select one <span>Tech</span></p>
   </div>
 </section>
@@ -28,16 +28,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
+
   .tech-selector a {
     margin-right: 4rem;
     font-size: 1.3rem;
     cursor: default;
   }
-  .hidden {
-    display: none;
+
+  /* Para ocultar inicialmente usando opacity */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
   }
-  .visible {
-    display: block;
+
+  /* Añadimos la clase visible para iniciar la animación */
+  .fade-in.visible {
+    opacity: 1;
   }
 
   #all {
@@ -63,6 +69,24 @@
       background-size: 100%;
     }
   }
+  /* -- -- --- --- -- FIXME: Responsive mobile */
+  @media (max-width: 768px) {
+    .section {
+      height: auto;
+      padding: 1rem;
+    }
+
+    .tech-selector {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tech-selector a {
+      margin: 0;
+      font-size: 1rem;
+      padding-right: 1rem;
+    }
+  }
 </style>
 
 <!-- MARK: Script -->
@@ -70,14 +94,13 @@
   setTimeout(() => {
     const delayedText = document.getElementById("delayed-text");
     if (delayedText) {
-      delayedText.classList.remove("hidden");
       delayedText.classList.add("visible");
     }
 
-    // change color txt to visible
+    // change text and in 1s | time
     const mbElement = document.querySelector(".tech-selector");
     if (mbElement) {
       (mbElement as HTMLElement).style.webkitTextFillColor = "#1b1c23";
     }
-  }, 1700);
+  }, 1000);
 </script>
