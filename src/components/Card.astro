@@ -1,12 +1,22 @@
 ---
-import { ALL } from "@/lib/data/index.ts";
+import { ALL, type AllTechIndex } from "@/lib/data/index.ts";
 
-const { id } = Astro.params;
-const filteredTech = ALL.filter((tech) => tech.id === "home");
+function shuffleArray(array: AllTechIndex[]) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+const filteredTech = shuffleArray(ALL);
 ---
 
-<section class="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
-  {filteredTech.map((index, i) => (
+<section
+  class="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8"
+>
+  {
+    filteredTech.map((index, i) => (
       <article class={`card-animation delay-${i * 100}`}>
         <a href={index.link} target="_blank" class="index-link">
           <figure class="flex items-center justify-center relative">
@@ -32,7 +42,6 @@ const filteredTech = ALL.filter((tech) => tech.id === "home");
     ))
   }
 </section>
-
 <!-- MARK: style -->
 <style>
   @keyframes slide-up {
@@ -65,17 +74,39 @@ const filteredTech = ALL.filter((tech) => tech.id === "home");
     color: white;
   }
 
-  .delay-0 { animation-delay: 0ms; }
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
-  .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
-  .delay-600 { animation-delay: 600ms; }
-  .delay-700 { animation-delay: 700ms; }
-  .delay-800 { animation-delay: 800ms; }
-  .delay-900 { animation-delay: 900ms; }
-  .delay-1000 { animation-delay: 1000ms;}
+  .delay-0 {
+    animation-delay: 0ms;
+  }
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+  .delay-600 {
+    animation-delay: 600ms;
+  }
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+  .delay-800 {
+    animation-delay: 800ms;
+  }
+  .delay-900 {
+    animation-delay: 900ms;
+  }
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
 
   /* --- Blur Effect */
   .blur-effect {
