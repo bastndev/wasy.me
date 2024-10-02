@@ -1,5 +1,5 @@
-<section class="section flex flex-col items-center">
-  <div class="tech-selector mb-4 dark:text-white">
+<section class="section flex flex-col items-center justify-center text-center">
+  <div class="tech-selector mb-4 dark:text-white" transition:name="IconTransition">
     <a href=""></a>
     <a href="/flutter/tool" data-tech="Tool">Tool</a>
     <a href="/flutter/api" data-tech="Api">Api</a>
@@ -19,15 +19,13 @@
 
 <style>
   .section {
-    height: 69px;
+    height: 96px;
   }
-
   .tech-selector a {
     text-transform: uppercase;
     margin-right: 4rem;
     font-size: 1.3rem;
   }
-
   .tech-selector a:hover {
     color: var(--color-primary);
   }
