@@ -26,6 +26,12 @@ export const ASTROJS: AstroTech[] = [
   },
   {
     id: "tool",
+    name: "responsively",
+    link: "https://responsively.app/download",
+    img: "https://camo.githubusercontent.com/07f1eb5bc22d00c16512af2e8ba046157ba7da09992b6f34a70b624914d69682/68747470733a2f2f726573706f6e736976656c792e6170702f6173736574732f696d672f6c6f676f2e706e67",
+  },
+  {
+    id: "tool",
     name: "bg.ibelick",
     link: "https://bg.ibelick.com/",
     img: "https://i.ibb.co/sjXyb2Y/Microsoft-Visual-Studio-Services-Icons-1.jpg",
