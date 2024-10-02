@@ -17,7 +17,7 @@ All the tools 🛠️ you need as a developer, in one place.\
 ![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPNMRF7AH4YOM5L4LCWZX533NA)
 
 > [!IMPORTANT]
-> This is project use last version of astroJS v5.0 BETA
+> This project uses the latest version of AstroJS v5.0 BETA
 
   ```sh
   npm create astro@latest -- --ref next
