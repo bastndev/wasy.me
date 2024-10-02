@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="http://wasy.me/">
-  <img width="200px" src="https://pbs.twimg.com/profile_images/1841503269740220416/2PnYcS9n_400x400.jpg" alt="Logo" />
+  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPNFFAD4H7NCGVF3JGUZX54D2Q" alt="Logo" />
 </a>
 
 ## wasy.me
