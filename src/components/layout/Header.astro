@@ -10,14 +10,20 @@ const version = filteredTech.length > 0 ? filteredTech[0].version : "N/A";
 ---
 
 <header class="bg-transparent dark:text-white py-4">
-  <div class="mx-auto flex justify-center items-center px-4 max-w-screen-xl gap-64">
+  <div
+    class="mx-auto flex justify-center items-center px-4 max-w-screen-xl gap-64"
+  >
     <a href="/" class="logo">
       <p>wasy <span class="me">.me</span></p>
     </a>
 
     <ThemeToggle />
 
-    <a href="https://github.com/bastndev/wasy.me" target="_blank" class="flex items-center space-x-4">
+    <a
+      href="https://github.com/bastndev/wasy.me"
+      target="_blank"
+      class="flex items-center space-x-4"
+    >
       <p class="version">{version}</p>
       <Icon.GitHub className="h-6 w-auto" />
     </a>
@@ -41,5 +47,14 @@ const version = filteredTech.length > 0 ? filteredTech[0].version : "N/A";
   }
   .version:hover {
     background: #0a0a0aab;
+  }
+  /* -- --- -- -- -- - FIXME: responsive Mobile */
+  @media (max-width: 640px) {
+    .logo {
+      font-size: 1rem;
+    }
+    .gap-64 {
+      gap: 5.1rem;
+    }
   }
 </style>
