@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<a href="http://wasy.me/">
+<a href="https://x.com/wasy_me">
   <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPNFFAD4H7NCGVF3JGUZX54D2Q" alt="Logo" />
 </a>
 
