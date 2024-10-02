@@ -212,6 +212,12 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://vercel.com/",
     img: "https://i.ibb.co/ZJT6BH2/icon.png",
   },
+  {
+    id: "tool",
+    name: "uicolors",
+    link: "https://uicolors.app/create",
+    img: "https://cdn-1.webcatalog.io/catalog/uicolors/uicolors-social-preview.png?v=1714781146665",
+  },
 
   // MARK: --- -- -- API
   {
@@ -1323,6 +1329,12 @@ export const FLUTTER: FlutterTech[] = [
     name: "myfonts",
     link: "https://www.myfonts.com/collections/hot-new-fonts",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_sJvvlBQRnHxwXgzRuhBEMIrv60OSfhmZdA&s",
+  },
+  {
+    id: "font",
+    name: "freefaces",
+    link: "https://www.freefaces.gallery/",
+    img: "https://cdn.prod.website-files.com/63ad770767a7fcd529308e52/63fa57c7b89899424ec08b94_homepage.png",
   },
 
   // MARK: --- -- -- AI

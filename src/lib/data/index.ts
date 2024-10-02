@@ -374,12 +374,23 @@ export const ALL: AllTechIndex[] = [
     link: "https://www.siteinspire.com/websites?categories=19&page=35",
     img: "https://pbs.twimg.com/profile_images/187287402/logo_orange_400x400.png",
   },
-
   {
     id: "astro",
     name: "Fonts Ninja",
     link: "https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=en-US&utm_source=ext_sidebar",
     img: "https://i.ibb.co/fn8NLVy/icon.jpg",
+  },
+  {
+    id: "astro",
+    name: "freefaces",
+    link: "https://www.freefaces.gallery/",
+    img: "https://cdn.prod.website-files.com/63ad770767a7fcd529308e52/63fa57c7b89899424ec08b94_homepage.png",
+  },
+  {
+    id: "astro",
+    name: "uicolors",
+    link: "https://uicolors.app/create",
+    img: "https://cdn-1.webcatalog.io/catalog/uicolors/uicolors-social-preview.png?v=1714781146665",
   },
 ];
 
