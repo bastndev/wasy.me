@@ -54,7 +54,6 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://lottiefiles.com/",
     img: "https://i.ibb.co/XZ9cGsm/4674917.webp",
   },
-
   {
     id: "tool",
     name: "material.io",
@@ -356,7 +355,6 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://fakeapi.platzi.com/",
     img: "https://i.ibb.co/Twt9hKT/logo-aa139940.webp",
   },
-
   {
     id: "api",
     name: "themealdb",
