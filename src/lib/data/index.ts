@@ -44,12 +44,6 @@ export const ALL: AllTechIndex[] = [
   },
   {
     id: "flutter",
-    name: "llama-api",
-    link: "https://www.llama-api.com/",
-    img: "https://mintlify.s3-us-west-1.amazonaws.com/llama-api/logo/light.png",
-  },
-  {
-    id: "flutter",
     name: "mistral",
     link: "https://docs.mistral.ai/api/",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7wxX2QJ1xaXZ_Z4n1UMxu50RhROPykQcnQ&s",
@@ -234,12 +228,6 @@ export const ALL: AllTechIndex[] = [
     link: "https://pieces.app/",
     img: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4afhm5klobc4cc4s4fd7.png",
   },
-  {
-    id: "flutter",
-    name: "otter.ai",
-    link: "https://otter.ai/",
-    img: "https://sm.pcmag.com/pcmag_uk/review/o/otter/otter_uzhk.jpg",
-  },
 
   // MARK: --- -- -- Index Astro
   {
@@ -382,22 +370,11 @@ export const ALL: AllTechIndex[] = [
   },
   {
     id: "astro",
-    name: "svgrepo",
-    link: "https://www.svgrepo.com/",
-    img: "https://i.ibb.co/vcB7mVj/303042276-386723733607265-568017298244385725-n.png",
-  },
-  {
-    id: "astro",
     name: "siteinspire",
     link: "https://www.siteinspire.com/websites?categories=19&page=35",
     img: "https://pbs.twimg.com/profile_images/187287402/logo_orange_400x400.png",
   },
-  {
-    id: "astro",
-    name: "mistral",
-    link: "https://docs.mistral.ai/api/",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7wxX2QJ1xaXZ_Z4n1UMxu50RhROPykQcnQ&s",
-  },
+
   {
     id: "astro",
     name: "Fonts Ninja",
