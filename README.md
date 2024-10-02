@@ -16,27 +16,26 @@ All the tools 🛠️ you need as a developer, in one place.\
 
 <img src="./public/assets/github/screenshot.webp" alt="">
 
-## Start project
-
-- This is project use last version of astroJS v5.0 BETA
+> [!IMPORTANT]
+> This is project use last version of astroJS v5.0 BETA
 
   ```sh
-    npm create astro@latest -- --ref next
+  npm create astro@latest -- --ref next
   ```
 
 ### Installation
 
 1. download or clone project
 
-```sh
-https://github.com/bastndev/wasy.me.git
-```
+  ```sh
+  https://github.com/bastndev/wasy.me.git
+  ```
 
 2. install package
 
-```sh
-npm install install
-```
+  ```sh
+  npm install install
+  ```
 
 - o NPM
 
@@ -72,7 +71,7 @@ Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blo
 
 If you want to contribute in a simpler way, you can buy us a coffee.
 
-<img src="./public/assets/img/buymeacoffee.svg" alt="">
+<img src="./assets/img/buymeacoffee.webp" alt="">
 
 ## 🛠️ Stack
 
