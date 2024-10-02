@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear();
 >
   <div class="wasy-me">
     <div class="social-media">
-      <a href="https://x.com/wasy_me " target="_blank" class="link">
+      <a href="https://x.com/wasy_me " target="_blank">
         <Icon.Twitter className="w-6" />
       </a>
     </div>
@@ -52,13 +52,13 @@ const currentYear = new Date().getFullYear();
   }
   /* -- -- -- -- -- about */
   .about {
-    background: #0a0a0a26;
     padding: 1.5rem 14rem 1.5rem 2rem;
     border-radius: 20px;
+    background: #0c0c0c2d;
   }
 
   /* -- --- --- selection  */
-  .about,
+  .about::selection,
   h3::selection,
   p::selection,
   span::selection,
@@ -88,5 +88,24 @@ const currentYear = new Date().getFullYear();
   }
   .buyme img:hover {
     filter: grayscale(0%);
+  }
+  /* -- --- -- -- -- - FIXME: responsive Mobile */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+    }
+    .social-media {
+      display: flex;
+      justify-content: center;
+    }
+    .social-media a {
+      margin-left: 1rem;
+    }
+    .about {
+      display: none;
+    }
+    .buyme {
+      display: none;
+    }
   }
 </style>
