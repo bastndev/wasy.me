@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="http://wasy.me/">
-  <img width="200px" src="./public/assets/github/logo.webp" alt="Logo" />
+  <img width="200px" src="https://pbs.twimg.com/profile_images/1841503269740220416/2PnYcS9n_400x400.jpg" alt="Logo" />
 </a>
 
 ## wasy.me
@@ -14,7 +14,7 @@ All the tools 🛠️ you need as a developer, in one place.\
 
 ## Screenshot Mobile-web
 
-<img src="./public/assets/github/screenshot.webp" alt="">
+![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPNMRF7AH4YOM5L4LCWZX533NA)
 
 > [!IMPORTANT]
 > This is project use last version of astroJS v5.0 BETA
@@ -71,7 +71,7 @@ Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blo
 
 If you want to contribute in a simpler way, you can buy us a coffee.
 
-<img src="./assets/img/buymeacoffee.webp" alt="">
+[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/img/buymeacoffe.webp?token=GHSAT0AAAAAACV3BFPMKB4PMDK4TCXLTCQ2ZX54ATA)](https://buymeacoffee.com/bastndev)
 
 ## 🛠️ Stack
 
