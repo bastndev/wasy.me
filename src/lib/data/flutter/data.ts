@@ -584,7 +584,7 @@ export const FLUTTER: FlutterTech[] = [
   },
   {
     id: "vs-code",
-    name: "bloc",
+    name: "bloc ex..",
     link: "https://marketplace.visualstudio.com/items?itemName=FelixAngelov.bloc",
     img: "https://i.ibb.co/9nhYSH1/icon-2-1.png",
   },
