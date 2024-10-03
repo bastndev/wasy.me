@@ -2,20 +2,36 @@
 interface Props {
   title: string;
   description: string;
-  canonical?: string;
   image?: string;
 }
 
 const {
   title,
   description,
-  canonical,
   image = "https://i.ibb.co/m4PY71t/screenshot.webp",
 } = Astro.props as Props;
-
 ---
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <title>{title}</title>
 <meta name="description" content={description} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@wasy_me" />
+<meta name="twitter:creator" content="@bastndev" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(image, Astro.url)} />
+
+<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:site_name" content="wasy.me" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="theme-color" content="#000000" />
+<meta name="keywords" content="wasy.me, tools, AstroJs, Flutter, AI , bastndev" />
