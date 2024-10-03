@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="https://x.com/wasy_me">
-  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPNFFAD4H7NCGVF3JGUZX54D2Q" alt="Logo" />
+  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPMG7KPS4OP5HUOKHA2ZX5566Q" alt="Logo" />
 </a>
 
 ## wasy.me
@@ -14,7 +14,7 @@ All the tools 🛠️ you need as a developer, in one place.\
 
 ## Screenshot Mobile-web
 
-![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPNMRF7AH4YOM5L4LCWZX533NA)
+![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPMY5XOJ67IXQ4UBRR4ZX557KQ)
 
 > [!IMPORTANT]
 > This project uses the latest version of AstroJS v5.0 BETA
@@ -71,7 +71,7 @@ Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blo
 
 If you want to contribute in a simpler way, you can buy us a coffee.
 
-[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/dev/public/assets/img/buymeacoffe.webp?token=GHSAT0AAAAAACV3BFPMKB4PMDK4TCXLTCQ2ZX54ATA)](https://buymeacoffee.com/bastndev)
+[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/img/buymeacoffe.webp?token=GHSAT0AAAAAACV3BFPMFCBBLUOXVNXQ45AEZX557WA)](https://buymeacoffee.com/bastndev)
 
 ## 🛠️ Stack
 
