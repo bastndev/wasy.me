@@ -25,21 +25,11 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 
 <meta charset="UTF-8" />
 <meta name="description" content={description} />
-
-<link rel="preconnect" href="wasy.me" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="canonical" href={canonicalURL} />
-<meta name="viewport" content="width=device-width" />
-<meta name="theme-color" content="#000000" />
-
-<meta
-  name="keywords"
-  content="wasy.me, tools, AstroJs, Flutter, AI , bastndev"
-/>
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@wasy_me" />
-<meta name="twitter:creator" content="@bastndev" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={new URL(image, Astro.url)} />
@@ -50,16 +40,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 <meta property="og:url" content={Astro.url} />
 <meta property="og:site_name" content="wasy.me" />
 <meta property="og:type" content="website" />
-<meta property="og:locale" content="en_US" />
-
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
-
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<meta name="msapplication-config" content="/browserconfig.xml" />
-
-<!-- <script is:inline src="/registerSW.js"></script> -->
 <link rel="manifest" href="/manifest.webmanifest" />
