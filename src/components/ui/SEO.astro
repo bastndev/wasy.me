@@ -13,34 +13,9 @@ const {
   image = "https://i.ibb.co/m4PY71t/screenshot.webp",
 } = Astro.props as Props;
 
-const determineCanonicalURL = () => {
-  if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
-  return canonical || Astro.url.pathname;
-};
-
-const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 ---
-
-<title>{title}</title>
-
 <meta charset="UTF-8" />
-<meta name="description" content={description} />
 <meta name="viewport" content="width=device-width" />
-<link rel="canonical" href={canonicalURL} />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@wasy_me" />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={new URL(image, Astro.url)} />
-
-<meta property="og:image" content={new URL(image, Astro.url)} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:url" content={Astro.url} />
-<meta property="og:site_name" content="wasy.me" />
-<meta property="og:type" content="website" />
-
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
-<link rel="manifest" href="/manifest.webmanifest" />
+<title>{title}</title>
+<meta name="description" content={description} />
