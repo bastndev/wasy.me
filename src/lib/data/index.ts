@@ -244,6 +244,12 @@ export const ALL: AllTechIndex[] = [
   },
   {
     id: "astro",
+    name: "opengraph",
+    link: "https://www.opengraph.xyz/",
+    img: "https://i.ibb.co/VVvQ12t/squoosh-logo.webp",
+  },
+  {
+    id: "astro",
     name: "Vercel",
     link: "https://vercel.com/",
     img: "https://i.ibb.co/ZJT6BH2/icon.png",

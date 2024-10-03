@@ -228,7 +228,12 @@ export const ASTROJS: AstroTech[] = [
     link: "https://pagespeed.web.dev/",
     img: "https://www.silomedia.co.uk/wp-content/uploads/2019/06/Google-PageSpeeds.png",
   },
-
+  {
+    id: "tool",
+    name: "opengraph",
+    link: "https://www.opengraph.xyz/",
+    img: "https://i.ibb.co/VVvQ12t/squoosh-logo.webp",
+  },
 
   // MARK: --- -- -- API
   {
