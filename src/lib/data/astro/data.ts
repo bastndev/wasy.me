@@ -222,6 +222,13 @@ export const ASTROJS: AstroTech[] = [
     link: "https://www.youtubethumbnaildownloader.com/",
     img: "https://lh3.googleusercontent.com/QBUEASE5YWp_Z_yhW7FwKafNE5MYO2FXt2vg3231tTyMB0f0D4jPCuBiQ1oZyxVK1b-aINIlP8wJHwTJZRyaE9J4jA=s1280-w1280-h800",
   },
+  {
+    id: "tool",
+    name: "pagespeed",
+    link: "https://pagespeed.web.dev/",
+    img: "https://www.silomedia.co.uk/wp-content/uploads/2019/06/Google-PageSpeeds.png",
+  },
+
 
   // MARK: --- -- -- API
   {
@@ -823,12 +830,6 @@ export const ASTROJS: AstroTech[] = [
     name: "Web Editor",
     link: "https://chromewebstore.google.com/detail/web-editor/pdmlhckofhkhebmcplblcijijgjiakcm?hl=en-US&utm_source=ext_sidebar",
     img: "https://i.ibb.co/6Bk66t8/icon-2.jpg",
-  },
-  {
-    id: "web-ex",
-    name: "pagespeed",
-    link: "https://pagespeed.web.dev/",
-    img: "https://www.silomedia.co.uk/wp-content/uploads/2019/06/Google-PageSpeeds.png",
   },
 
   // MARK: --- -- -- UI/UX
