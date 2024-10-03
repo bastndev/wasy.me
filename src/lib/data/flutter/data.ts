@@ -1340,18 +1340,6 @@ export const FLUTTER: FlutterTech[] = [
   // MARK: --- -- -- AI
   {
     id: "ai",
-    name: "GitHub.copilot",
-    link: "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
-    img: "https://github.gallerycdn.vsassets.io/extensions/github/copilot/1.234.1130/1727717137704/Microsoft.VisualStudio.Services.Icons.Default",
-  },
-  {
-    id: "ai",
-    name: "copilot-chat",
-    link: "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat",
-    img: "https://github.gallerycdn.vsassets.io/extensions/github/copilot-chat/0.21.2024093003/1727733884402/Microsoft.VisualStudio.Services.Icons.Default",
-  },
-  {
-    id: "ai",
     name: "tabnine",
     link: "https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode",
     img: "https://tabnine.gallerycdn.vsassets.io/extensions/tabnine/tabnine-vscode/3.165.0/1727701567978/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1391,6 +1379,18 @@ export const FLUTTER: FlutterTech[] = [
     name: "waveterm.dev",
     link: "https://www.waveterm.dev/",
     img: "https://avatars.githubusercontent.com/u/120279640?v=4",
+  },
+  {
+    id: "ai",
+    name: "GitHub.copilot",
+    link: "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+    img: "https://logowik.com/content/uploads/images/github-copilot1720909346.logowik.com.webp",
+  },
+  {
+    id: "ai",
+    name: "copilot-chat",
+    link: "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfN6omJ0Ik3YbZR265Iv4FWb7SNGFG3rvUA&s",
   },
   {
     id: "ai",
