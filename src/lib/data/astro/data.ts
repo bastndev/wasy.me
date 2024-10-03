@@ -4,7 +4,7 @@ export const ASTROJS: AstroTech[] = [
     id: "tool",
     name: "squoosh.app",
     link: "https://squoosh.app/",
-    img: "https://iconape.com/wp-content/files/lz/341438/png/squoosh-logo.png",
+    img: "https://i.ibb.co/CJmPbxR/logo-squoosh.webp",
   },
   {
     id: "tool",
@@ -191,6 +191,36 @@ export const ASTROJS: AstroTech[] = [
     name: "text-compare",
     link: "https://text-compare.com/",
     img: "https://i.ibb.co/bgJ60jk/icon.jpg",
+  },
+  {
+    id: "tool",
+    name: "ograph previewer",
+    link: "https://chromewebstore.google.com/detail/ograph-previewer/ggcfeakcnodgcmmllfdbmngekljbhiim",
+    img: "https://i.ibb.co/cbmMnBh/Screenshot-from-2024-10-01-23-37-05.webp",
+  },
+  {
+    id: "tool",
+    name: "search",
+    link: "https://search.google.com/search-console/about",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISU7PP4sqLGYFfSUpfnyrZ1r1uSt8J7P3ig&s",
+  },
+  {
+    id: "tool",
+    name: "framer",
+    link: "https://www.framer.com/motion/",
+    img: "https://cdn3d.iconscout.com/3d/free/thumb/free-framer-3d-icon-download-in-png-blend-fbx-gltf-file-formats--prototyping-tool-digital-product-design-web-coding-lang-pack-logos-icons-7578003.png",
+  },
+  {
+    id: "tool",
+    name: "hubdev",
+    link: "https://www.hubdev.tools/",
+    img: "https://i.ibb.co/0QqGWtL/Screenshot-from-2024-10-03-11-13-22.png",
+  },
+  {
+    id: "tool",
+    name: "youtube thumbnail",
+    link: "https://www.youtubethumbnaildownloader.com/",
+    img: "https://lh3.googleusercontent.com/QBUEASE5YWp_Z_yhW7FwKafNE5MYO2FXt2vg3231tTyMB0f0D4jPCuBiQ1oZyxVK1b-aINIlP8wJHwTJZRyaE9J4jA=s1280-w1280-h800",
   },
 
   // MARK: --- -- -- API
