@@ -6,20 +6,22 @@ import FlutterAstro from "@/icons/FlutterAstro.astro";
 import Search from "@/components/Search.astro";
 import SelectTecHome from "@/components/SelectTecHome.astro";
 import Card from "@/components/Card.astro";
+import MobileButonAstroFlutter from "@/components/MobileButonAstroFlutter.astro";
 ---
 
-<Layout title="wasy.me">
+<Layout title="wasy.me" description={"All the tools 🛠️ you need as a developer, web - mobile 🌐"}>
   <BgLight.Grey />
-  <section class="flex my-6 ml-20 mb-14">
+  <section class=" my-6 ml-20 mb-14 md:flex hidden">
     <TextPlanet />
     <FlutterAstro />
   </section>
   <!-- --- --- --- -- Search and select  -->
-  <div class="">
+  <div>
     <Search />
     <SelectTecHome />
   </div>
   <!-- --- --- --- -- Card and Content -->
+  <MobileButonAstroFlutter />
   <Card />
 </Layout>
 

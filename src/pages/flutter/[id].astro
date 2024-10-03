@@ -12,9 +12,9 @@ const { id } = Astro.params;
 const filteredTech = FLUTTER.filter((tech) => tech.id === id);
 ---
 
-<Layout title="wasy.me">
+<Layout title="wasy.me" description={"tools to improve your Flutter 💙projects"}>
   <BgLight.Blue />
-  <section class="flex my-6 ml-20 mb-14">
+  <section class=" my-6 ml-20 mb-14 md:flex hidden">
     <TextPlanet />
     <Flutter />
   </section>
