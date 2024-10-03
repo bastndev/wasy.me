@@ -3,21 +3,34 @@ import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
 import Header from "@/components/layout/Header.astro";
 import Footer from "@/components/layout/Footer.astro";
+import SEO from "@/components/ui/SEO.astro";
+import type { Preload } from "@/types/Preload";
 
 interface Props {
   title: string;
 }
 
-const { title } = Astro.props;
+interface Props {
+  title: string;
+  description: string;
+  preload?: Array<Preload>;
+  canonical?: string;
+  image?: string;
+}
+
+const { title, description, preload, canonical, image } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" class="dark">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
+    <SEO
+      canonical={canonical}
+      description={description}
+      image={image}
+      preload={preload}
+      title={title}
+    />
     <ViewTransitions />
   </head>
   <body class="relative text-black dark:text-white bg-gray-50 dark:bg-black">

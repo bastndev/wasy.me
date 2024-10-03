@@ -1,0 +1,26 @@
+{
+    "name": "wasy.me",
+    "short_name": "Wasy.me",
+    "description": "All the tools 🛠️ you need as a developer, web - mobile 🌐.",
+    "theme_color": "#00000",
+    "background_color": "#00000",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "/assets/icons/favicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/icons/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/icons/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }
