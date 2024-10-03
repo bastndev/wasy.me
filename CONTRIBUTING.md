@@ -1,6 +1,5 @@
-# Contributor Covenant Code of Conduct
+# Contributing to wasy.me 🌐
 
-## Welcome to 'wasy.me' 🌐
 
 We are delighted that you're interested in contributing to our project! This document will guide you through the steps necessary to contribute your valuable work to 'wasy.me', a project developed with Astro. We aim to make this process simple and transparent, so here’s a step-by-step guide.
 
