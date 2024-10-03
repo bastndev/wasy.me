@@ -65,7 +65,7 @@ Here’s a quick guide:
 6. Push to the branch (`git push origin feature/AmazingFeature`).
 7. Open a [_pull request_](https://github.com/bastndev/wasy.me/pulls).
 
-Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blob/main/Contributors.md) to get started in the best way and follow good practices.
+Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blob/1ff41e805f89bcc7c786166a91f97826124a3d9c/CONTRIBUTING.md) to get started in the best way and follow good practices.
 
 ### Buy a Coffee
 

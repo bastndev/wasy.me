@@ -1,13 +1,17 @@
 ---
+import type { Preload } from '@/types/Preload';
+
 interface Props {
   title: string;
   description: string;
+  preload?: Array<Preload>;
   image?: string;
 }
 
 const {
   title,
   description,
+  preload,
   image = "https://i.ibb.co/m4PY71t/screenshot.webp",
 } = Astro.props as Props;
 ---
@@ -17,6 +21,18 @@ const {
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <title>{title}</title>
 <meta name="description" content={description} />
+
+
+<link rel="preconnect" href="wasy.me" />
+
+{
+  preload?.map(({ href, as, type, rel = "preload", crossorigin }) => (
+    <link {rel} {href} {as} {type} {crossorigin} />
+  ))
+}
+
+<meta name="theme-color" content="#000000" />
+<meta name="keywords" content="wasy.me, tools, AstroJs, Flutter, AI , bastndev" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@wasy_me" />
@@ -32,6 +48,3 @@ const {
 <meta property="og:site_name" content="wasy.me" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-
-<meta name="theme-color" content="#000000" />
-<meta name="keywords" content="wasy.me, tools, AstroJs, Flutter, AI , bastndev" />
