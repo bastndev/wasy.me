@@ -1,10 +1,7 @@
 ---
-import type { Preload } from "@/types/Preload";
-
 interface Props {
   title: string;
   description: string;
-  preload?: Array<Preload>;
   canonical?: string;
   image?: string;
 }
@@ -12,7 +9,6 @@ interface Props {
 const {
   title,
   description,
-  preload,
   canonical,
   image = "https://i.ibb.co/m4PY71t/screenshot.webp",
 } = Astro.props as Props;
@@ -31,12 +27,6 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 <meta name="description" content={description} />
 
 <link rel="preconnect" href="wasy.me" />
-
-{
-  preload?.map(({ href, as, type, rel = "preload", crossorigin }) => (
-    <link {rel} {href} {as} {type} {crossorigin} />
-  ))
-}
 
 <link rel="canonical" href={canonicalURL} />
 <meta name="viewport" content="width=device-width" />
