@@ -4,9 +4,9 @@ import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
 import TextPlanet from "@/components/TextPlanet.astro";
 import AstroJs from "@/icons/AstroJs.astro";
-import Search from "@/components/Search.astro";
 import SelectTecAstro from "@/components/SelectTecAstro.astro";
 import { ASTROJS } from "@/lib/data/astro/data";
+import SearchTs from "@/components/SearchTs";
 
 const { id } = Astro.params;
 const filteredTech = ASTROJS.filter((tech) => tech.id === id);
@@ -20,7 +20,7 @@ const filteredTech = ASTROJS.filter((tech) => tech.id === id);
   </section>
   <!-- --- --- --- -- Search and select  -->
   <div>
-    <Search />
+    <SearchTs client:load />
     <SelectTecAstro />
   </div>
   <section

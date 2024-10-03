@@ -5,18 +5,21 @@ export const ALL: AllTechIndex[] = [
     name: "pub.dev",
     link: "https://pub.dev/",
     img: "https://play-lh.googleusercontent.com/o6-o4rYNnFRE1HbsvQ-rEytxjTPX7sR1DVAJJWE-Sr_4u5Ju3rD_Vq8HbKUkltu6qoc",
+    info: "The best packages for Flutter",
   },
   {
     id: "flutter",
     name: "firebase",
     link: "https://firebase.google.com/",
     img: "https://brandeps.com/logo-download/F/Firebase-logo-02.png",
+    info: "The best backend for Flutter",
   },
   {
     id: "flutter",
     name: "fvm.app",
     link: "https://fvm.app/",
     img: "https://i.ibb.co/tJNrCWW/Screenshot-from-2024-10-01-15-44-37.png",
+    info: "The best Flutter version manager",
   },
   {
     id: "flutter",
@@ -403,6 +406,7 @@ export const ALL: AllTechIndex[] = [
     name: "uicolors",
     link: "https://uicolors.app/create",
     img: "https://cdn-1.webcatalog.io/catalog/uicolors/uicolors-social-preview.png?v=1714781146665",
+    info: "The best color palette generator",
   },
 ];
 
@@ -411,4 +415,5 @@ export interface AllTechIndex {
   name: string;
   img: string;
   link: string;
+  info?: string;
 }

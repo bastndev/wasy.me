@@ -1,27 +1,41 @@
 ---
+// Importaciones necesarias
 import "@/styles/card.css";
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
 import TextPlanet from "@/components/TextPlanet.astro";
-import Flutter from "@/icons/flutter.astro";
-import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
-import { FLUTTER } from "@/lib/data/flutter/data";
+// import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
+import { ALL } from "@/lib/data/index.ts";
+import FlutterAstro from "@/icons/FlutterAstro.astro";
 import SearchTs from "@/components/SearchTs";
 
+// Obtener el parámetro de búsqueda desde la URL
 const { id } = Astro.params;
-const filteredTech = FLUTTER.filter((tech) => tech.id === id);
+
+// Convertir el id en un array de palabras clave
+const searchKeywords = (id || "").toLowerCase().split(" ");
+
+// Filtrar los datos de acuerdo a las palabras clave
+const filteredTech = ALL.filter((tech) => 
+  searchKeywords.some(keyword =>
+    tech.id.toLowerCase().includes(keyword) || 
+    tech.name.toLowerCase().includes(keyword) || 
+    (tech.info && tech.info.toLowerCase().includes(keyword))
+  )
+);
+
 ---
 
-<Layout title="wasy.me" description={"tools to improve your Flutter 💙projects"}>
-  <BgLight.Blue />
+<Layout title="wasy.me" description={"Search best tools for your projects"}>
+  <BgLight.Grey />
   <section class=" my-6 ml-20 mb-14 md:flex hidden">
     <TextPlanet />
-    <Flutter />
+    <FlutterAstro />
   </section>
   <!-- --- --- --- -- Search and select Tech -->
   <div>
     <SearchTs client:load />
-    <SelectTecFlutter />
+    <!-- <SelectTecFlutter /> -->
   </div>
   <!-- --- --- --- -- Card and Content -->
   <section
@@ -58,10 +72,7 @@ const filteredTech = FLUTTER.filter((tech) => tech.id === id);
 
 <!-- MARK: style -->
 <style>
-  
-  /* HEERE : card animation in ---> "../styles/global.css"; */
-
-  /* --- Blur Effect */
+  /* Animaciones de las tarjetas */
   .blur-effect {
     opacity: 0;
     filter: blur(0);
@@ -78,7 +89,7 @@ const filteredTech = FLUTTER.filter((tech) => tech.id === id);
       filter 0.3s ease;
   }
 
-  /* --- Scale logo */
+  /* Escalar el logo al hacer hover */
   .index-link:hover {
     transform: scale(1.05);
     transition: transform 0.4s ease;
