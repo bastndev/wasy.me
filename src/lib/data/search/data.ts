@@ -157,13 +157,6 @@ export const ALL: AllTechIndex[] = [
   },
   {
     id: "tool",
-    name: "supabase",
-    link: "https://supabase.com/",
-    img: "https://i.ibb.co/L1Kw8KM/profile-pic.png",
-    info: "backend, databases",
-  },
-  {
-    id: "tool",
     name: "postman",
     link: "https://www.postman.com/",
     img: "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
@@ -1339,13 +1332,6 @@ export const ALL: AllTechIndex[] = [
     link: "https://pub.dev/packages/get_it",
     img: "https://i.ibb.co/QmHvmCx/Screenshot-from-2024-10-01-17-21-55-3.webp",
     info: "dependency injection, packages, flutter",
-  },
-  {
-    id: "package",
-    name: "supabase_flutter",
-    link: "https://pub.dev/packages/supabase_flutter",
-    img: "https://i.ibb.co/mtNhV3T/supabase-firebase-package.webp",
-    info: "backend, database, packages, flutter",
   },
   {
     id: "package",

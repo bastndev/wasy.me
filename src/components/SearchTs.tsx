@@ -1,16 +1,27 @@
-import { useState, type ChangeEvent } from "react";
+import { useState, type ChangeEvent, type FormEvent } from "react";
 import { Icon } from "@/icons/Ui";
 
 export default function Search() {
   const [value, setValue] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const search = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
   };
 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      window.location.href = `/search/${value}`;
+    }, 2500);
+  };
+
   return (
     <form
-      action={`/search/${value}`}
+      onSubmit={handleSubmit}
       method="POST"
       className="flex justify-center items-center mt-7 mb-10"
     >
@@ -20,14 +31,19 @@ export default function Search() {
           className="flex-1 p-3 rounded-l-lg bg-black text-white placeholder-gray-500 focus:outline-none transition-all"
           value={value}
           onChange={search}
-          placeholder="Search tools"
+          placeholder="Search BETA"
         />
         <button
           type="submit"
           className="bg-black p-3 rounded-r-lg flex items-center justify-center text-gray-400 hover:text-gray-200 transition-all"
           aria-label="Search"
+          disabled={loading}
         >
-          <Icon.Flare />
+          {loading ? (
+            <img className="w-[14px]" src="/assets/gif/loading.gif" alt="Loading" />
+          ) : (
+            <Icon.Flare />
+          )}
         </button>
       </div>
     </form>
