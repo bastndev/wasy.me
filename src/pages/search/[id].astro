@@ -1,46 +1,43 @@
 ---
-// Importaciones necesarias
 import "@/styles/card.css";
+import FlutterAstro from "@/icons/FlutterAstro.astro";
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
-import TextPlanet from "@/components/TextPlanet.astro";
-// import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
-import { ALL } from "@/lib/data/index.ts";
-import FlutterAstro from "@/icons/FlutterAstro.astro";
 import SearchTs from "@/components/SearchTs";
+import SelectTecHome from "@/components/SelectTecHome.astro";
+import TextPlanet from "@/components/TextPlanet.astro";
+import { ALL } from "@/lib/data/index.ts";
 
-// Obtener el parámetro de búsqueda desde la URL
 const { id } = Astro.params;
-
-// Convertir el id en un array de palabras clave
 const searchKeywords = (id || "").toLowerCase().split(" ");
 
-// Filtrar los datos de acuerdo a las palabras clave
-const filteredTech = ALL.filter((tech) => 
-  searchKeywords.some(keyword =>
-    tech.id.toLowerCase().includes(keyword) || 
-    tech.name.toLowerCase().includes(keyword) || 
-    (tech.info && tech.info.toLowerCase().includes(keyword))
+const filteredTech = ALL.filter((tech) =>
+  searchKeywords.some(
+    (keyword) =>
+      tech.id.toLowerCase().includes(keyword) ||
+      tech.name.toLowerCase().includes(keyword) ||
+      (tech.info && tech.info.toLowerCase().includes(keyword))
   )
 );
-
 ---
 
 <Layout title="wasy.me" description={"Search best tools for your projects"}>
   <BgLight.Grey />
-  <section class=" my-6 ml-20 mb-14 md:flex hidden">
+  
+  <!-- Header Section -->
+  <section class="my-6 ml-20 mb-14 md:flex hidden">
     <TextPlanet />
     <FlutterAstro />
   </section>
-  <!-- --- --- --- -- Search and select Tech -->
+  
+  <!-- Search and Select Tech Section -->
   <div>
     <SearchTs client:load />
-    <!-- <SelectTecFlutter /> -->
+    <SelectTecHome />
   </div>
-  <!-- --- --- --- -- Card and Content -->
-  <section
-    class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8"
-  >
+  
+  <!-- Card and Content Section -->
+  <section class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
     {
       filteredTech.map((index, i) => (
         <article class={`card-animation delay-${i * 100}`}>
