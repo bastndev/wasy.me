@@ -2,10 +2,10 @@
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
 import TextPlanet from "@/components/TextPlanet.astro";
-import Search from "@/components/Search.astro";
 import Flutter from "@/icons/flutter.astro";
 import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
 import CardFlutter from "@/components/CardFlutter.astro";
+import SearchTs from "@/components/SearchTs";
 ---
 
 <Layout title="wasy.me" description={"Mobile developer tools"}>
@@ -16,7 +16,7 @@ import CardFlutter from "@/components/CardFlutter.astro";
   </section>
   <!-- --- --- --- -- Search and select Tech -->
   <div>
-    <Search />
+    <SearchTs client:load />
     <SelectTecFlutter />
   </div>
   <!-- --- --- --- -- Card and Content -->

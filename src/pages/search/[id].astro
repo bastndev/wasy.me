@@ -1,32 +1,43 @@
 ---
 import "@/styles/card.css";
+import FlutterAstro from "@/icons/FlutterAstro.astro";
 import Layout from "@/layouts/Layout.astro";
 import { BgLight } from "@/components/layout/BackgroundLigh";
-import TextPlanet from "@/components/TextPlanet.astro";
-import Flutter from "@/icons/flutter.astro";
-import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
-import { FLUTTER } from "@/lib/data/flutter/data";
 import SearchTs from "@/components/SearchTs";
+import SelectTecHome from "@/components/SelectTecHome.astro";
+import TextPlanet from "@/components/TextPlanet.astro";
+import { ALL } from "@/lib/data/index.ts";
 
 const { id } = Astro.params;
-const filteredTech = FLUTTER.filter((tech) => tech.id === id);
+const searchKeywords = (id || "").toLowerCase().split(" ");
+
+const filteredTech = ALL.filter((tech) =>
+  searchKeywords.some(
+    (keyword) =>
+      tech.id.toLowerCase().includes(keyword) ||
+      tech.name.toLowerCase().includes(keyword) ||
+      (tech.info && tech.info.toLowerCase().includes(keyword))
+  )
+);
 ---
 
-<Layout title="wasy.me" description={"tools to improve your Flutter 💙projects"}>
-  <BgLight.Blue />
-  <section class=" my-6 ml-20 mb-14 md:flex hidden">
+<Layout title="wasy.me" description={"Search best tools for your projects"}>
+  <BgLight.Grey />
+  
+  <!-- Header Section -->
+  <section class="my-6 ml-20 mb-14 md:flex hidden">
     <TextPlanet />
-    <Flutter />
+    <FlutterAstro />
   </section>
-  <!-- --- --- --- -- Search and select Tech -->
+  
+  <!-- Search and Select Tech Section -->
   <div>
     <SearchTs client:load />
-    <SelectTecFlutter />
+    <SelectTecHome />
   </div>
-  <!-- --- --- --- -- Card and Content -->
-  <section
-    class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8"
-  >
+  
+  <!-- Card and Content Section -->
+  <section class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
     {
       filteredTech.map((index, i) => (
         <article class={`card-animation delay-${i * 100}`}>
@@ -58,10 +69,7 @@ const filteredTech = FLUTTER.filter((tech) => tech.id === id);
 
 <!-- MARK: style -->
 <style>
-  
-  /* HEERE : card animation in ---> "../styles/global.css"; */
-
-  /* --- Blur Effect */
+  /* Animaciones de las tarjetas */
   .blur-effect {
     opacity: 0;
     filter: blur(0);
@@ -78,7 +86,7 @@ const filteredTech = FLUTTER.filter((tech) => tech.id === id);
       filter 0.3s ease;
   }
 
-  /* --- Scale logo */
+  /* Escalar el logo al hacer hover */
   .index-link:hover {
     transform: scale(1.05);
     transition: transform 0.4s ease;
