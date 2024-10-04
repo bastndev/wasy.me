@@ -49,6 +49,7 @@ export default function Search() {
           value={value}
           onChange={search}
           placeholder="Search BETA"
+          spellCheck={false}
         />
         <button
           type="submit"
