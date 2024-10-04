@@ -6,7 +6,7 @@ import { BgLight } from "@/components/layout/BackgroundLigh";
 import SearchTs from "@/components/SearchTs";
 import SelectTecHome from "@/components/SelectTecHome.astro";
 import TextPlanet from "@/components/TextPlanet.astro";
-import { ALL } from "@/lib/data/index.ts";
+import { ALL } from "@/lib/data/search/data";
 
 const { id } = Astro.params;
 const searchKeywords = (id || "").toLowerCase().split(" ");
