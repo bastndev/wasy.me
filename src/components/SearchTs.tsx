@@ -1,9 +1,26 @@
-import { useState, type ChangeEvent, type FormEvent } from "react";
+import { useState, useEffect, type ChangeEvent, type FormEvent } from "react";
 import { Icon } from "@/icons/Ui";
 
 export default function Search() {
   const [value, setValue] = useState("");
   const [loading, setLoading] = useState(false);
+  const [inputType, setInputType] = useState("text");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setInputType("search");
+      } else {
+        setInputType("text");
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const search = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
@@ -16,7 +33,7 @@ export default function Search() {
     setTimeout(() => {
       setLoading(false);
       window.location.href = `/search/${value}`;
-    }, 2500);
+    }, 1322);
   };
 
   return (
@@ -27,7 +44,7 @@ export default function Search() {
     >
       <div className="relative w-full max-w-lg mx-auto flex items-center border border-[#2c2c2c] rounded-lg p-1 focus-within:ring-2 focus-within:ring-[#101010] transition-all">
         <input
-          type="search"
+          type={inputType}
           className="flex-1 p-3 rounded-l-lg bg-black text-white placeholder-gray-500 focus:outline-none transition-all"
           value={value}
           onChange={search}
@@ -40,7 +57,11 @@ export default function Search() {
           disabled={loading}
         >
           {loading ? (
-            <img className="w-[14px]" src="/assets/gif/loading.gif" alt="Loading" />
+            <img
+              className="w-[14px]"
+              src="/assets/gif/loading.gif"
+              alt="Loading"
+            />
           ) : (
             <Icon.Flare />
           )}
