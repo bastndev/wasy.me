@@ -1,12 +1,12 @@
 ---
 import "@/styles/card.css";
+import { ALL } from "@/lib/data/search/data";
+import { BgLight } from "@/components/layout/BackgroundLigh";
 import FlutterAstro from "@/icons/FlutterAstro.astro";
 import Layout from "@/layouts/Layout.astro";
-import { BgLight } from "@/components/layout/BackgroundLigh";
 import SearchTs from "@/components/SearchTs";
 import SelectTecHome from "@/components/SelectTecHome.astro";
 import TextPlanet from "@/components/TextPlanet.astro";
-import { ALL } from "@/lib/data/index.ts";
 
 const { id } = Astro.params;
 const searchKeywords = (id || "").toLowerCase().split(" ");
@@ -22,7 +22,7 @@ const filteredTech = ALL.filter((tech) =>
 ---
 
 <Layout title="wasy.me" description={"Search best tools for your projects"}>
-  <BgLight.Grey />
+  <BgLight.White />
   
   <!-- Header Section -->
   <section class="my-6 ml-20 mb-14 md:flex hidden">
@@ -39,30 +39,36 @@ const filteredTech = ALL.filter((tech) =>
   <!-- Card and Content Section -->
   <section class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
     {
-      filteredTech.map((index, i) => (
-        <article class={`card-animation delay-${i * 100}`}>
-          <a href={index.link} target="_blank" class="index-link">
-            <figure class="flex items-center justify-center relative">
-              <img
-                class="object-cover w-[50%] aspect-square rounded-[10px] z-10"
-                src={index.img}
-                alt={index.name}
-              />
-              <img
-                class="absolute object-cover w-[70%] aspect-square bg-white rounded-[10px] blur-effect"
-                src={index.img}
-                alt={index.name}
-              />
-            </figure>
+      filteredTech.length > 0 ? (
+        filteredTech.map((index, i) => (
+          <article class={`card-animation delay-${i * 100}`}>
+            <a href={index.link} target="_blank" class="index-link">
+              <figure class="flex items-center justify-center relative">
+                <img
+                  class="object-cover w-[50%] aspect-square rounded-[10px] z-10"
+                  src={index.img}
+                  alt={index.name}
+                />
+                <img
+                  class="absolute object-cover w-[70%] aspect-square bg-white rounded-[10px] blur-effect"
+                  src={index.img}
+                  alt={index.name}
+                />
+              </figure>
 
-            <div class="flex justify-center items-center mt-6">
-              <h2 class="text-[16px] font-bold text-left text-white/50">
-                {index.name}
-              </h2>
-            </div>
-          </a>
-        </article>
-      ))
+              <div class="flex justify-center items-center mt-6">
+                <h2 class="text-[16px] font-bold text-left text-white/50">
+                  {index.name}
+                </h2>
+              </div>
+            </a>
+          </article>
+        ))
+      ) : (
+        <div class="col-span-full text-center text-red-500 mt-6">
+          <p>The tool you were looking for was not found. 😥</p>
+        </div>
+      )
     }
   </section>
 </Layout>
