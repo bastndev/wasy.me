@@ -218,6 +218,12 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://uicolors.app/create",
     img: "https://cdn-1.webcatalog.io/catalog/uicolors/uicolors-social-preview.png?v=1714781146665",
   },
+  {
+    id: "tool",
+    name: "serverpod",
+    link: "https://serverpod.dev/",
+    img: "https://avatars.githubusercontent.com/u/48181558?s=200&v=4",
+  },
 
   // MARK: --- -- -- API
   {

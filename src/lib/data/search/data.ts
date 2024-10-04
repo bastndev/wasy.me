@@ -231,7 +231,7 @@ export const ALL: AllTechIndex[] = [
     name: "opengraph",
     link: "https://www.opengraph.xyz/",
     img: "https://i.ibb.co/VVvQ12t/squoosh-logo.webp",
-    info: "Open Graph, metadata, social, sharing",
+    info: "Open Graph, metadata, social, sharing, seo",
   },
   // ------------------------------------------- Flutter
   {
@@ -247,6 +247,13 @@ export const ALL: AllTechIndex[] = [
     link: "https://firebase.google.com/",
     img: "https://brandeps.com/logo-download/F/Firebase-logo-02.png",
     info: "backend, database, tools",
+  },
+  {
+    id: "tool",
+    name: "serverpod",
+    link: "https://serverpod.dev/",
+    img: "https://avatars.githubusercontent.com/u/48181558?s=200&v=4",
+    info: "backend, server, flutter",
   },
   {
     id: "tool",
@@ -862,13 +869,6 @@ export const ALL: AllTechIndex[] = [
     link: "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens",
     img: "https://usernamehw.gallerycdn.vsassets.io/extensions/usernamehw/errorlens/3.20.0/1719044874383/Microsoft.VisualStudio.Services.Icons.Default",
     info: "error, visibility, tools, debugging",
-  },
-  {
-    id: "vscode",
-    name: "Img-preview",
-    link: "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview",
-    img: "https://i.ibb.co/xJzGW66/icon.jpg",
-    info: "image, preview, tools, editor",
   },
   {
     id: "vscode",
