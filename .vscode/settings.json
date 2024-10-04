@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "animista",
+        "apifootball",
+        "apigame",
         "apilist",
         "atlasicons",
         "authjs",
@@ -24,10 +26,12 @@
         "coolicons",
         "crossorigin",
         "cuberto",
+        "currencyconverter",
         "dafontfree",
         "dartfrog",
         "dartpad",
         "deepai",
+        "deepscribe",
         "designvault",
         "dragonball",
         "dribbble",
@@ -72,6 +76,8 @@
         "imgur",
         "inappwebview",
         "iosapptemplates",
+        "ipgeolocation",
+        "ipinfo",
         "jetbrains",
         "joshwcomeau",
         "jsonplaceholder",
@@ -91,6 +97,7 @@
         "myfonts",
         "mylens",
         "namecheap",
+        "newsapi",
         "ograph",
         "onepagelove",
         "openai",
@@ -111,6 +118,7 @@
         "quokka",
         "randomuser",
         "razorpay",
+        "recursos",
         "refero",
         "remixicon",
         "replit",
@@ -126,6 +134,7 @@
         "sketchappsources",
         "snappify",
         "snyk",
+        "soundraw",
         "sourcegraph",
         "sqflite",
         "squoosh",
@@ -152,6 +161,7 @@
         "Wappalyzer",
         "wasy",
         "waveterm",
+        "weatherapi",
         "xdgeek"
     ]
 }
