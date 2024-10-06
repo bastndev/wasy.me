@@ -234,6 +234,18 @@ export const ASTROJS: AstroTech[] = [
     link: "https://www.opengraph.xyz/",
     img: "https://i.ibb.co/VVvQ12t/squoosh-logo.webp",
   },
+  {
+    id: "tool",
+    name: "omatsuri",
+    link: "https://omatsuri.app/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ_wkgfFjTVfl7_PNYkb8Gq-0IFE6ke-33g&s",
+  },
+/*   {
+    id: "tool",
+    name: "",
+    link: "",
+    img: "",
+  }, */
 
   // MARK: --- -- -- API
   {
