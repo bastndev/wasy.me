@@ -451,6 +451,28 @@ export const ALL: AllTechIndex[] = [
     img: "https://i.ibb.co/9q7c66Y/Screenshot-from-2024-10-01-15-55-54.png",
     info: "design, UI, flutter",
   },
+  {
+    id: "tool",
+    name: "omatsuri",
+    link: "https://omatsuri.app/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ_wkgfFjTVfl7_PNYkb8Gq-0IFE6ke-33g&s",
+    info: "animations, design, color, svg, image. tool",
+  },
+  {
+    id: "tool",
+    name: "widgetbook",
+    link: "https://www.widgetbook.io/",
+    img: "https://avatars.githubusercontent.com/u/91122910?s=200&v=4",
+    info: "widgets, design, flutter, tool, server, fullstack ",
+  },
+  {
+    id: "tool",
+    name: "shorebird",
+    link: "https://shorebird.dev/",
+    img: "https://pbs.twimg.com/profile_images/1661106143609888768/QaxefMYi_400x400.jpg",
+    info: "tool, flutter, app, ci/cd, testing, deployment",
+  },
+
   // MARK: --- -- -- -- -- --API
   {
     id: "api",

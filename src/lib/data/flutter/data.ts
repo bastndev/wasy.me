@@ -224,6 +224,18 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://serverpod.dev/",
     img: "https://avatars.githubusercontent.com/u/48181558?s=200&v=4",
   },
+  {
+    id: "tool",
+    name: "widgetbook",
+    link: "https://www.widgetbook.io/",
+    img: "https://avatars.githubusercontent.com/u/91122910?s=200&v=4",
+  },
+  {
+    id: "tool",
+    name: "shorebird",
+    link: "https://shorebird.dev/",
+    img: "https://pbs.twimg.com/profile_images/1661106143609888768/QaxefMYi_400x400.jpg",
+  },
 
   // MARK: --- -- -- API
   {

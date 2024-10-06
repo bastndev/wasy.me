@@ -231,6 +231,12 @@ export const ALL: AllTechIndex[] = [
 
   // MARK: --- -- -- Index Astro
   {
+    id: "tool",
+    name: "omatsuri",
+    link: "https://omatsuri.app/",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ_wkgfFjTVfl7_PNYkb8Gq-0IFE6ke-33g&s",
+  },
+  {
     id: "astro",
     name: "errorlens",
     link: "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens",
