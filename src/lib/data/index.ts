@@ -82,7 +82,7 @@ export const ALL: AllTechIndex[] = [
     id: "flutter",
     name: "heroicons",
     link: "https://heroicons.com/",
-    img: "https://bestofjs.org/logos/heroicons.dark.svg",
+    img: "https://i.ibb.co/W2vZ5px/images.png",
   },
   {
     id: "flutter",

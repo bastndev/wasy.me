@@ -236,6 +236,55 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://shorebird.dev/",
     img: "https://pbs.twimg.com/profile_images/1661106143609888768/QaxefMYi_400x400.jpg",
   },
+  {
+    id: "tool",
+    name: "samples",
+    link: "https://flutter.github.io/samples/#",
+    img: "https://i.ibb.co/hZnVFKR/logo.png",
+  },
+  {
+    id: "tool",
+    name: "material_3_demo",
+    link: "https://flutter.github.io/samples/web/material_3_demo/",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/1024px-Google_Material_Design_Logo.svg.png",
+  },
+  {
+    id: "tool",
+    name: "Templates",
+    link: "https://www.flutterlibrary.com/templates/chat-message-app",
+    img: "https://api.otakoyi.software/uploads/content/2023/11/20/1280/what-is-flutter-and-its-contribution-to-your-projects-success_-311x229.webp",
+  },
+  {
+    id: "tool",
+    name: "Onesignal",
+    link: "https://onesignal.com/",
+    img: "https://imgs.search.brave.com/y8av_lF4RJy6o2BKEHuTHPbssfVm2855_tDVU88icpc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2RhdGFu/eXplLWRhdGEvL3Rl/Y2hub2xvZ2llcy9m/MGJiYzRjZTcxZjI4/ZDg4N2E5MjNhNTA5/Njg0NGYyYjFiZDQ4/MWRhLnBuZw",
+  },
+  {
+    id: "tool",
+    name: "Notifications",
+    link: "https://firebase.flutter.dev/docs/messaging/notifications/",
+    img: "https://firebase.flutter.dev/img/flutterfire_300x.png",
+  },
+  {
+    id: "tool",
+    name: "Puro",
+    link: "https://puro.dev/",
+    img: "https://puro.dev/assets/puro_icon_small.png",
+  },
+  {
+    id: "tool",
+    name: "Fluttermix",
+    link: "https://www.fluttermix.com/docs/overview/comparison",
+    img: "https://www.fluttermix.com/assets/mix-icon.svg",
+  },
+  /*   {
+    id: "tool",
+    name: "",
+    link: "",
+    img: "",
+  },
+ */
 
   // MARK: --- -- -- API
   {
@@ -475,7 +524,7 @@ export const FLUTTER: FlutterTech[] = [
     id: "icon",
     name: "heroicons",
     link: "https://heroicons.com/",
-    img: "https://bestofjs.org/logos/heroicons.dark.svg",
+    img: "https://i.ibb.co/W2vZ5px/images.png",
   },
   {
     id: "icon",
@@ -851,6 +900,12 @@ export const FLUTTER: FlutterTech[] = [
   },
   {
     id: "package",
+    name: "formz",
+    link: "https://pub.dev/packages/formz",
+    img: "https://i.ibb.co/qddPLd5/Screenshot-from-2024-10-01-17-21-55.webp",
+  },
+  {
+    id: "package",
     name: "get",
     link: "https://pub.dev/packages/get",
     img: "https://i.ibb.co/GRzPhP0/Screenshot-from-2024-10-01-17-21-55-1.webp",
@@ -885,7 +940,12 @@ export const FLUTTER: FlutterTech[] = [
     link: "https://pub.dev/packages/sqflite",
     img: "https://i.ibb.co/7Q7Pzn2/Screenshot-from-2024-10-01-17-21-55-2.webp",
   },
-
+  {
+    id: "package",
+    name: "dotenv",
+    link: "https://pub.dev/packages/flutter_dotenv",
+    img: "https://avatars.githubusercontent.com/u/93011474?s=200&v=4",
+  },
   {
     id: "package",
     name: "get_it",
@@ -1067,7 +1127,7 @@ export const FLUTTER: FlutterTech[] = [
     id: "package",
     name: "flutter_meedu",
     link: "https://pub.dev/packages/flutter_meedu",
-    img: "https://scontent.flim6-3.fna.fbcdn.net/v/t39.30808-6/361090128_834831474914261_699621882644424689_n.png?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=aedX7lcWwwsQ7kNvgEhNCGF&_nc_zt=23&_nc_ht=scontent.flim6-3.fna&_nc_gid=AX_WMj4Gl74WUyfrNb5roiB&oh=00_AYD3r5WAW5-L6Lsjzjd2DH0ayImj0CNjlLAtcVlAtMV0Xw&oe=6702828A",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
   {
     id: "package",
@@ -1366,7 +1426,7 @@ export const FLUTTER: FlutterTech[] = [
     id: "ai",
     name: "v0.dev",
     link: "https://v0.dev/chat",
-    img: "https://v0.dev/apple-icon.png?0ef31a19cc582b82",
+    img: "https://v0.dev/assets/apple-icon.png",
   },
   {
     id: "ai",
