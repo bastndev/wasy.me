@@ -1067,7 +1067,7 @@ export const FLUTTER: FlutterTech[] = [
     id: "package",
     name: "flutter_meedu",
     link: "https://pub.dev/packages/flutter_meedu",
-    img: "https://scontent.flim6-3.fna.fbcdn.net/v/t39.30808-6/361090128_834831474914261_699621882644424689_n.png?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=aedX7lcWwwsQ7kNvgEhNCGF&_nc_zt=23&_nc_ht=scontent.flim6-3.fna&_nc_gid=AX_WMj4Gl74WUyfrNb5roiB&oh=00_AYD3r5WAW5-L6Lsjzjd2DH0ayImj0CNjlLAtcVlAtMV0Xw&oe=6702828A",
+    img: "https://i.ibb.co/kKJWCHh/flutter-favorite-logo.png",
   },
   {
     id: "package",
@@ -1366,7 +1366,7 @@ export const FLUTTER: FlutterTech[] = [
     id: "ai",
     name: "v0.dev",
     link: "https://v0.dev/chat",
-    img: "https://v0.dev/apple-icon.png?0ef31a19cc582b82",
+    img: "https://v0.dev/assets/apple-icon.png",
   },
   {
     id: "ai",
