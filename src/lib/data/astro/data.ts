@@ -486,7 +486,7 @@ export const ASTROJS: AstroTech[] = [
     id: "icon",
     name: "heroicons",
     link: "https://heroicons.com/",
-    img: "https://bestofjs.org/logos/heroicons.dark.svg",
+    img: "https://i.ibb.co/W2vZ5px/images.png",
   },
   {
     id: "icon",
