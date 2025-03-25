@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="https://x.com/wasy_me">
-  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/logo.webp?token=GHSAT0AAAAAACV3BFPMG7KPS4OP5HUOKHA2ZX5566Q" alt="Logo" />
+  <img width="200px" src="https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/logo.webp" alt="Logo" />
 </a>
 
 ## wasy.me
@@ -14,7 +14,7 @@ All the tools 🛠️ you need as a developer, in one place.\
 
 ## Screenshot Mobile-web
 
-![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/screenshot.webp?token=GHSAT0AAAAAACV3BFPMY5XOJ67IXQ4UBRR4ZX557KQ)
+![Screenshot](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/github/screenshot.webp)
 
 > [!IMPORTANT]
 > This project uses the latest version of AstroJS v5.0 BETA
