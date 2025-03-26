@@ -1,0 +1,89 @@
+---
+import "@/styles/card.css";
+import Layout from "@/layouts/Layout.astro";
+import { BgLight } from "@/components/layout/BackgroundLight";
+import TextPlanet from "@/components/TextPlanet.astro";
+import Flutter from "@/icons/flutter.astro";
+import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
+import { FLUTTER } from "@/lib/data/flutter/data";
+import SearchTs from "@/components/SearchTs";
+
+const { id } = Astro.params;
+const filteredTech = FLUTTER.filter((tech) => tech.id === id);
+---
+
+<Layout title="wasy.me" description={"tools to improve your Flutter 💙projects"}>
+  <BgLight.Blue />
+  <section class=" my-6 ml-20 mb-14 md:flex hidden">
+    <TextPlanet />
+    <Flutter />
+  </section>
+  <!-- --- --- --- -- Search and select Tech -->
+  <div>
+    <SearchTs client:load />
+    <SelectTecFlutter />
+  </div>
+  <!-- --- --- --- -- Card and Content -->
+  <section
+    class="grid grid-cols-2 my-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8"
+  >
+    {
+      filteredTech.map((index, i) => (
+        <article class={`card-animation delay-${i * 100}`}>
+          <a href={index.link} target="_blank" class="index-link">
+            <figure class="flex items-center justify-center relative">
+              <img
+                class="object-cover w-[50%] aspect-square rounded-[10px] z-10"
+                src={index.img}
+                alt={index.name}
+              />
+              <img
+                class="absolute object-cover w-[70%] aspect-square bg-white rounded-[10px] blur-effect"
+                src={index.img}
+                alt={index.name}
+              />
+            </figure>
+
+            <div class="flex justify-center items-center mt-6">
+              <h2 class="text-[16px] font-bold text-left text-white/50">
+                {index.name}
+              </h2>
+            </div>
+          </a>
+        </article>
+      ))
+    }
+  </section>
+</Layout>
+
+<!-- MARK: style -->
+<style>
+  
+  /* HEERE : card animation in ---> "../styles/global.css"; */
+
+  .index-link:hover h2 {
+    color: var(--color-primary);
+  }
+  /* --- Blur Effect */
+  .blur-effect {
+    opacity: 0;
+    filter: blur(0);
+    transition:
+      opacity 0.9s ease,
+      filter 0.9s ease;
+  }
+
+  .index-link:hover .blur-effect {
+    opacity: 0.5;
+    filter: blur(15px);
+    transition:
+      opacity 0.3s ease,
+      filter 0.3s ease;
+  }
+
+  /* --- Scale logo */
+  .index-link:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+  }
+</style>
