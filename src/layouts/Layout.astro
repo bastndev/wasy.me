@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import Header from "@/components/layout/Header.astro";
 import Footer from "@/components/layout/Footer.astro";
 import SEO from "@/components/ui/SEO.astro";
@@ -22,7 +22,7 @@ const { title, description, image } = Astro.props;
       image={image}
       title={title}
     />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="relative text-black dark:text-white bg-gray-50 dark:bg-black">
     <Header />
