@@ -1,27 +1,19 @@
 ---
 import "@/styles/card.css";
 import Layout from "@/layouts/Layout.astro";
-import { BgLight } from "@/components/layout/BackgroundLight";
-import TextPlanet from "@/components/TextPlanet.astro";
-import Flutter from "@/icons/flutter.astro";
-import SelectTecFlutter from "@/components/SelectTecFlutter.astro";
-import { FLUTTER } from "@/lib/data/flutter/data";
+import { VIDEO } from "@/lib/data/video/data";
 import SearchTs from "@/components/SearchTs";
+import SelectTecVideo from "@/components/SelectTecVideo.astro";
 
 const { id } = Astro.params;
-const filteredTech = FLUTTER.filter((tech) => tech.id === id);
+const filteredTech = VIDEO.filter((tech) => tech.id === id);
 ---
 
 <Layout title="wasy.me" description={"tools to improve your Flutter 💙projects"}>
-  <BgLight.Blue />
-  <section class=" my-6 ml-20 mb-14 md:flex hidden">
-    <TextPlanet />
-    <Flutter />
-  </section>
   <!-- --- --- --- -- Search and select Tech -->
   <div>
     <SearchTs client:load />
-    <SelectTecFlutter />
+    <SelectTecVideo />
   </div>
   <!-- --- --- --- -- Card and Content -->
   <section
