@@ -3,8 +3,8 @@ export const VIDEO: FlutterTech[] = [
   {
     id: "use",
     name: "YT Video DW",
-    link: "https://www.socialplug.io/free-tools/youtube-video-downloader   ",
-    img: "https://i.ibb.co/35Fx46bH/1723736445586.jpg",
+    link: "https://www.socialplug.io/free-tools/youtube-video-downloader",
+    img: "https://i.ibb.co/35Fx46bH/1723736445586.jpg"
   },
   //   MARK: --- -- -- BANK IMG
   {
