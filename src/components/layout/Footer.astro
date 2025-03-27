@@ -24,12 +24,12 @@ const currentYear = new Date().getFullYear();
     <p>Terms of service</p>
   </div>
 
-  <div class="buyme">
+  <a href="https://buymeacoffee.com/bastndev" target="_blank" class="buyme">
     <p>Do you feel like supporting my work? 🙂</p>
-    <a href="https://buymeacoffee.com/bastndev" target="_blank">
-      <img src="/assets/img/buymeacoffe.webp" alt="" />
+      <div>
+        <img src="/assets/img/buymeacoffe.webp" alt="" />
+      </div>
     </a>
-  </div>
 </footer>
 <!-- MARK: Style -->
 <style>
@@ -77,7 +77,7 @@ const currentYear = new Date().getFullYear();
   }
   .buyme:hover {
     border: 1px solid #ffe600a8;
-    cursor: none;
+    cursor: pointer;
   }
   .buyme p {
     margin-right: 1rem;
@@ -87,6 +87,9 @@ const currentYear = new Date().getFullYear();
     transition: filter 0.5s ease;
   }
   .buyme img:hover {
+    filter: grayscale(0%);
+  }
+  .buyme:hover img {
     filter: grayscale(0%);
   }
   /* -- --- -- -- -- - FIXME: responsive Mobile */
