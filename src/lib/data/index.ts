@@ -430,6 +430,13 @@ export const ALL: AllTechIndex[] = [
     name: "aistudio",
     img: "https://iili.io/3u0Kddu.webp",
     link: "https://aistudio.google.com/prompts/new_chat"
+  },
+  // MARK---- --- -- PLUS
+  {
+    id: "vs-code",
+    name: "Themes",
+    img: "https://iili.io/3AV7rla.jpg",
+    link: "https://themes.vscode.one/"
   }
 ];
 
