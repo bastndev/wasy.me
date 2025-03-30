@@ -319,9 +319,8 @@ export const VIDEO: FlutterTech[] = [
     name: "aistudio",
     img: "https://iili.io/3u0Kddu.webp",
     link: "https://aistudio.google.com/prompts/new_chat"
-  },
-  {
-    id: "use",
+  }, {
+    id: "",
     name: "",
     img: "",
     link: ""
