@@ -194,7 +194,22 @@ export const ALL: AllTechIndex[] = [
 
   // MARK: --- -- -- Index Astro
   {
-    id: "tool",
+    id: "astro",
+    name: "testingbot",
+    img: "https://iili.io/3u0xNNn.webp",
+    link: "https://testingbot.com/members"
+  }, {
+    id: "astro",
+    name: "browserling",
+    img: "https://iili.io/3u0qOJe.webp",
+    link: "https://www.browserling.com/"
+  }, {
+    id: "astro",
+    name: "usepastel",
+    img: "https://iili.io/3u0BcBV.webp",
+    link: "https://usepastel.com/responsive-website-test"
+  }, {
+    id: "astro",
     name: "omatsuri",
     link: "https://omatsuri.app/",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ_wkgfFjTVfl7_PNYkb8Gq-0IFE6ke-33g&s"
