@@ -319,6 +319,78 @@ export const VIDEO: FlutterTech[] = [
     name: "aistudio",
     img: "https://iili.io/3u0Kddu.webp",
     link: "https://aistudio.google.com/prompts/new_chat"
+  },
+  // MARK: --- -- -- USE
+  {
+    id: "use",
+    name: "Download MP3 ",
+    img: "https://iili.io/3uaz1a9.webp",
+    link: "https://y2mate.nu/en-ClIf/"
+  }, {
+    id: "use",
+    name: "Download PM4 ",
+    link: "https://www.socialplug.io/free-tools/youtube-use-downloader",
+    img: "https://i.ibb.co/35Fx46bH/1723736445586.jpg"
+  }, {
+    id: "use",
+    name: "upscale.media",
+    img: "https://iili.io/3ulywuI.webp",
+    link: "https://www.upscale.media/es"
+  }, {
+    id: "use",
+    name: "Delete Object",
+    img: "https://iili.io/3ua05ZP.webp",
+    link: "https://www.photoroom.com/tools/remove-object-from-photo"
+  }, {
+    id: "use",
+    name: "yarn.co",
+    img: "https://iili.io/3u0IxrQ.webp",
+    link: "https://yarn.co/"
+  }, {
+    id: "use",
+    name: "dreamina.capcut",
+    img: "https://iili.io/3u0a1e4.webp",
+    link: "https://dreamina.capcut.com/"
+  }, {
+    id: "use",
+    name: "clipchamp",
+    img: "https://iili.io/3u0MsMQ.webp",
+    link: "https://clipchamp.com/"
+  }, {
+    id: "use",
+    name: "vidnoz.com",
+    img: "https://iili.io/3ul6TrX.webp",
+    link: "https://www.vidnoz.com/voice-changer.html "
+  }, {
+    id: "use",
+    name: "myinstants",
+    img: "https://iili.io/3ulPyKP.jpg",
+    link: "https://www.myinstants.com/es/categories/Sound%20Effects/ "
+  }, {
+    id: "use",
+    name: "Voice",
+    img: "https://iili.io/3ucRXKx.png",
+    link: "https://podcast.adobe.com/enhance  "
+  }, {
+    id: "use",
+    name: "Jitter",
+    img: "https://iili.io/3uavpb1.png",
+    link: "https://jitter.use/"
+  }, {
+    id: "use",
+    name: "3D",
+    img: "https://iili.io/3uc9wKv.jpg",
+    link: "https://app.spline.design/home "
+  }, {
+    id: "use",
+    name: "videoeffects",
+    img: "https://iili.io/3u1IzSp.webp",
+    link: "https://videoeffects.com/"
+  }, {
+    id: "use",
+    name: "aistudio",
+    img: "https://iili.io/3u0Kddu.webp",
+    link: "https://aistudio.google.com/prompts/new_chat"
   }, {
     id: "",
     name: "",
