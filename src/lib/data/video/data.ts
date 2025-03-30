@@ -118,6 +118,11 @@ export const VIDEO: FlutterTech[] = [
     name: "wallpaperengin",
     img: "https://iili.io/3u0E2PS.webp",
     link: "https://www.wallpaperengine.space/collections/best-in-4k"
+  }, {
+    id: "image",
+    name: "iloveimg",
+    img: "https://iili.io/3AVE2bj.webp",
+    link: "https://www.iloveimg.com/es/comprimir-imagen/comprimir-jpg"
   },
 
   // MARK: --- -- -- VIDEO
