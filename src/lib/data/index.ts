@@ -194,7 +194,22 @@ export const ALL: AllTechIndex[] = [
 
   // MARK: --- -- -- Index Astro
   {
-    id: "tool",
+    id: "astro",
+    name: "testingbot",
+    img: "https://iili.io/3u0xNNn.webp",
+    link: "https://testingbot.com/members"
+  }, {
+    id: "astro",
+    name: "browserling",
+    img: "https://iili.io/3u0qOJe.webp",
+    link: "https://www.browserling.com/"
+  }, {
+    id: "astro",
+    name: "usepastel",
+    img: "https://iili.io/3u0BcBV.webp",
+    link: "https://usepastel.com/responsive-website-test"
+  }, {
+    id: "astro",
     name: "omatsuri",
     link: "https://omatsuri.app/",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ_wkgfFjTVfl7_PNYkb8Gq-0IFE6ke-33g&s"
@@ -347,9 +362,74 @@ export const ALL: AllTechIndex[] = [
   // MARK: --- -- -- Video
   {
     id: "video",
-    name: "YT Video DW",
+    name: "Download MP3 ",
+    img: "https://iili.io/3uaz1a9.webp",
+    link: "https://y2mate.nu/en-ClIf/"
+  }, {
+    id: "video",
+    name: "Download PM4 ",
     link: "https://www.socialplug.io/free-tools/youtube-video-downloader",
     img: "https://i.ibb.co/35Fx46bH/1723736445586.jpg"
+  }, {
+    id: "video",
+    name: "upscale.media",
+    img: "https://iili.io/3ulywuI.webp",
+    link: "https://www.upscale.media/es"
+  }, {
+    id: "video",
+    name: "Delete Object",
+    img: "https://iili.io/3ua05ZP.webp",
+    link: "https://www.photoroom.com/tools/remove-object-from-photo"
+  }, {
+    id: "video",
+    name: "yarn.co",
+    img: "https://iili.io/3u0IxrQ.webp",
+    link: "https://yarn.co/"
+  }, {
+    id: "video",
+    name: "dreamina.capcut",
+    img: "https://iili.io/3u0a1e4.webp",
+    link: "https://dreamina.capcut.com/"
+  }, {
+    id: "video",
+    name: "clipchamp",
+    img: "https://iili.io/3u0MsMQ.webp",
+    link: "https://clipchamp.com/"
+  }, {
+    id: "video",
+    name: "vidnoz.com",
+    img: "https://iili.io/3ul6TrX.webp",
+    link: "https://www.vidnoz.com/voice-changer.html "
+  }, {
+    id: "video",
+    name: "myinstants",
+    img: "https://iili.io/3ulPyKP.jpg",
+    link: "https://www.myinstants.com/es/categories/Sound%20Effects/ "
+  }, {
+    id: "video",
+    name: "Voice",
+    img: "https://iili.io/3ucRXKx.png",
+    link: "https://podcast.adobe.com/enhance  "
+  }, {
+    id: "video",
+    name: "Jitter",
+    img: "https://iili.io/3uavpb1.png",
+    link: "https://jitter.video/"
+  }, {
+    id: "video",
+    name: "3D",
+    img: "https://iili.io/3uc9wKv.jpg",
+    link: "https://app.spline.design/home "
+  }, {
+    id: "video",
+    name: "videoeffects",
+    img: "https://iili.io/3u1IzSp.webp",
+    link: "https://videoeffects.com/"
+  }, {
+    id: "video",
+    name: "aistudio",
+    img: "https://iili.io/3u0Kddu.webp",
+    link: "https://aistudio.google.com/prompts/new_chat"
   }
 ];
 
