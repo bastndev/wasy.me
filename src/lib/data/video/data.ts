@@ -208,11 +208,6 @@ export const VIDEO: FlutterTech[] = [
     link: "https://pixabay.com/videos/search/video%20effects/"
   }, {
     id: "video",
-    name: "footagecrate",
-    img: "https://iili.io/3u1YcIp.webp",
-    link: "https://footagecrate.com/"
-  }, {
-    id: "video",
     name: "mixkit.co",
     img: "https://iili.io/3u1atDl.webp",
     link: "https://mixkit.co/free-premiere-pro-templates/liquid-swipe-left-to-right-transition-33/"
@@ -294,6 +289,11 @@ export const VIDEO: FlutterTech[] = [
     link: "https://jitter.video/"
   }, {
     id: "effect",
+    name: "videoeffects",
+    img: "https://iili.io/3u1IzSp.webp",
+    link: "https://videoeffects.com/"
+  }, {
+    id: "effect",
     name: "Rotato",
     img: "https://iili.io/3uarh6g.png",
     link: "https://rotato.app/"
@@ -309,14 +309,29 @@ export const VIDEO: FlutterTech[] = [
     link: "https://guide.alightmotion.com/effects/"
   }, {
     id: "effect",
-    name: "videoeffects",
-    img: "https://iili.io/3u1IzSp.webp",
-    link: "https://videoeffects.com/"
-  }, {
-    id: "effect",
     name: "cinepacks.store",
     img: "https://iili.io/3u0R1oX.webp",
     link: "https://cinepacks.store/?srsltid=AfmBOorevigF56DA85m2798vF4RXen1YeumxDbfzuJbZ1tkbkPVjfPSx"
+  }, {
+    id: "effect",
+    name: "panzoid",
+    img: "https://iili.io/3AW6OAu.webp",
+    link: "https://panzoid.com/creations"
+  }, {
+    id: "effect",
+    name: "motionarray",
+    img: "https://iili.io/3AWtub1.png",
+    link: "https://motionarray.com/browse/stock-motion-graphics/?q=free"
+  }, {
+    id: "effect",
+    name: "footagecrate",
+    img: "https://iili.io/3u1YcIp.webp",
+    link: "https://footagecrate.com/"
+  }, {
+    id: "effect",
+    name: "motionvfx",
+    img: "https://iili.io/3AXJpft.jpg",
+    link: "https://www.motionvfx.com/"
   },
   // MARK: --- -- -- AI-PKG
   {
@@ -327,6 +342,11 @@ export const VIDEO: FlutterTech[] = [
   },
   // MARK: --- -- -- USE
   {
+    id: "",
+    name: "",
+    img: "",
+    link: ""
+  }, {
     id: "use",
     name: "Download MP3 ",
     img: "https://iili.io/3uaz1a9.webp",
@@ -380,7 +400,7 @@ export const VIDEO: FlutterTech[] = [
     id: "use",
     name: "Jitter",
     img: "https://iili.io/3uavpb1.png",
-    link: "https://jitter.use/"
+    link: "https://jitter.video/"
   }, {
     id: "use",
     name: "3D",
@@ -396,11 +416,6 @@ export const VIDEO: FlutterTech[] = [
     name: "aistudio",
     img: "https://iili.io/3u0Kddu.webp",
     link: "https://aistudio.google.com/prompts/new_chat"
-  }, {
-    id: "",
-    name: "",
-    img: "",
-    link: ""
   }
 ];
 
