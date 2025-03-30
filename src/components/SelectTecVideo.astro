@@ -1,111 +1,109 @@
 <section class="section flex flex-col items-center justify-center text-center">
-    <div
-      class="tech-selector mb-4 dark:text-white"
-      transition:name="IconTransition"
-    >
-      <a href=""></a>
-      <a href="/video/material" data-tech="Use">Material</a>
-      <a href="/video/image" data-tech="BackIMG">IMAGE</a>
-      <a href="/video/video" data-tech="BackVideo"> VIDEO</a>
-      <a href="/video/sound" data-tech="Music">SOUND</a>
-      <a href="/video/effect" data-tech="Effect">EFFECT</a>
-      <a href="/video/ai-pkg" data-tech="Package">Ai / pkg</a>
+  <div
+    class="tech-selector mb-4 dark:text-white"
+    transition:name="IconTransition"
+  >
+    <a href=""></a>
+    <a href="/video/material" data-tech="material">Material</a>
+    <a href="/video/image" data-tech="BackIMG">IMAGE</a>
+    <a href="/video/video" data-tech="BackVideo"> VIDEO</a>
+    <a href="/video/sound" data-tech="Music">SOUND</a>
+    <a href="/video/effect" data-tech="Effect">EFFECT</a>
+    <a href="/video/ai-pkg" data-tech="Package">Ai / pkg</a>
+  </div>
+  <div>
+    <p class="dark:text-white">
+      You have selected now <span id="selected-tech">Video</span>
+    </p>
+  </div>
+</section>
 
-    </div>
-    <div>
-      <p class="dark:text-white">
-        You have selected now <span id="selected-tech">Video</span>
-      </p>
-    </div>
-  </section>
-  
-  <style>
+<style>
+  .section {
+    height: 96px;
+  }
+  .tech-selector a {
+    text-transform: uppercase;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+  }
+  .tech-selector a:hover {
+    color: var(--color-primary);
+  }
+
+  /* Styles fot text selected */
+  .selected-tech-link {
+    color: var(--color-primary) !important;
+    font-weight: bold;
+  }
+
+  span {
+    font-family: monospace;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: 1px solid var(--color-3);
+    color: var(--color-2);
+    font-weight: bold;
+  }
+  /* -- -- --- --- -- FIXME: Responsive mobile */
+  @media (max-width: 768px) {
     .section {
-      height: 96px;
+      height: auto;
+      padding: 1rem;
     }
+
+    .tech-selector {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .tech-selector a {
-      text-transform: uppercase;
-      margin-right: 4rem;
-      font-size: 1.3rem;
+      margin: 0;
+      font-size: 0.9rem;
+      padding-right: 1rem;
     }
-    .tech-selector a:hover {
-      color: var(--color-primary);
-    }
-  
-    /* Styles fot text selected */
-    .selected-tech-link {
-      color: var(--color-primary) !important;
-      font-weight: bold;
-    }
-  
-    span {
-      font-family: monospace;
-      background-color: white;
-      border-radius: 5px;
-      padding: 2px 10px;
-      border: 1px solid var(--color-3);
-      color: var(--color-2);
-      font-weight: bold;
-    }
-    /* -- -- --- --- -- FIXME: Responsive mobile */
-    @media (max-width: 768px) {
-      .section {
-        height: auto;
-        padding: 1rem;
-      }
-  
-      .tech-selector {
-        flex-direction: column;
-        align-items: center;
-      }
-  
-      .tech-selector a {
-        margin: 0;
-        font-size: 0.9rem;
-        padding-right: 1rem;
-      }
-    }
-  </style>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const selectedTechElement = document.getElementById("selected-tech");
-      const savedTech = localStorage.getItem("selectedTech");
-  
-      if (savedTech && selectedTechElement) {
-        selectedTechElement.textContent = savedTech;
-  
-        document.querySelectorAll(".tech-selector a").forEach((link) => {
-          if (link.getAttribute("data-tech") === savedTech) {
-            link.classList.add("selected-tech-link");
-          }
-        });
-      }
-    });
-  
-    document.querySelectorAll(".tech-selector a").forEach((link) => {
-      link.addEventListener("click", function (this: HTMLAnchorElement, event) {
-        event.preventDefault();
-        const selectedTech = this.getAttribute("data-tech");
-        const selectedTechElement = document.getElementById("selected-tech");
-  
-        if (selectedTechElement) {
-          selectedTechElement.textContent = selectedTech;
-          if (selectedTech) {
-            localStorage.setItem("selectedTech", selectedTech);
-          }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectedTechElement = document.getElementById("selected-tech");
+    const savedTech = localStorage.getItem("selectedTech");
+
+    if (savedTech && selectedTechElement) {
+      selectedTechElement.textContent = savedTech;
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        if (link.getAttribute("data-tech") === savedTech) {
+          link.classList.add("selected-tech-link");
         }
-  
-        document.querySelectorAll(".tech-selector a").forEach((link) => {
-          link.classList.remove("selected-tech-link");
-        });
-  
-        this.classList.add("selected-tech-link");
-  
-        setTimeout(() => {
-          window.location.href = this.href;
-        }, 100);
       });
+    }
+  });
+
+  document.querySelectorAll(".tech-selector a").forEach((link) => {
+    link.addEventListener("click", function (this: HTMLAnchorElement, event) {
+      event.preventDefault();
+      const selectedTech = this.getAttribute("data-tech");
+      const selectedTechElement = document.getElementById("selected-tech");
+
+      if (selectedTechElement) {
+        selectedTechElement.textContent = selectedTech;
+        if (selectedTech) {
+          localStorage.setItem("selectedTech", selectedTech);
+        }
+      }
+
+      document.querySelectorAll(".tech-selector a").forEach((link) => {
+        link.classList.remove("selected-tech-link");
+      });
+
+      this.classList.add("selected-tech-link");
+
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 100);
     });
-  </script>
-  
+  });
+</script>
