@@ -400,11 +400,37 @@ export const VIDEO: FlutterTech[] = [
     img: "https://iili.io/35IHO4n.webp",
     link: "https://ghibliai.io/"
   }, {
+    id: "ai-pkg",
+    name: "chatgpt.com",
+    img: "https://iili.io/35IUv9a.webp",
+    link: "https://chatgpt.com/"
+  }, {
+    id: "ai-pkg",
+    name: "deepseek",
+    img: "https://iili.io/35IUUtR.webp",
+    link: "https://chat.deepseek.com/"
+  }, {
+    id: "ai-pkg",
+    name: "mistral",
+    img: "https://iili.io/35IU4MN.webp",
+    link: "https://chat.mistral.ai/chat"
+  }, {
+    id: "ai-pkg",
+    name: "qwen.ai",
+    img: "https://iili.io/35IUrnp.jpg",
+    link: "https://chat.qwen.ai/"
+  }, {
+    id: "ai-pkg",
+    name: "claude.ai",
+    img: "https://iili.io/35IU8AJ.webp",
+    link: "https://claude.ai/"
+  },  {
     id: "",
     name: "",
     img: "",
     link: ""
   },
+
   // MARK: --- -- -- USE
   {
     id: "",
