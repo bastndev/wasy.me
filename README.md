@@ -71,7 +71,7 @@ Please refer to our [contribution guide](https://github.com/bastndev/wasy.me/blo
 
 If you want to contribute in a simpler way, you can buy us a coffee.
 
-[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/img/buymeacoffe.webp?token=GHSAT0AAAAAACV3BFPMFCBBLUOXVNXQ45AEZX557WA)](https://buymeacoffee.com/bastndev)
+[![buy a coffee](https://raw.githubusercontent.com/bastndev/wasy.me/refs/heads/main/public/assets/img/buymeacoffe.webp)](https://buymeacoffee.com/bastndev)
 
 ## 🛠️ Stack
 
