@@ -339,6 +339,71 @@ export const VIDEO: FlutterTech[] = [
     name: "aistudio",
     img: "https://iili.io/3u0Kddu.webp",
     link: "https://aistudio.google.com/prompts/new_chat"
+  }, {
+    id: "ai-pkg",
+    name: "remaker.ai",
+    img: "https://iili.io/35zUMb4.webp",
+    link: "https://remaker.ai/ai-filter/studio-ghibli-filter/"
+  }, {
+    id: "ai-pkg",
+    name: "krea.ai",
+    img: "https://iili.io/35zggvs.jpg",
+    link: "https://www.krea.ai/"
+  }, {
+    id: "ai-pkg",
+    name: "leonardo",
+    img: "https://iili.io/35zrc9s.webp",
+    link: "https://app.leonardo.ai/"
+  }, {
+    id: "ai-pkg",
+    name: "lexica.art",
+    img: "https://iili.io/35z6bat.webp",
+    link: "https://lexica.art/?q=generame+una+tecla+de+un+teclado+que+paresca++una+garra"
+  }, {
+    id: "ai-pkg",
+    name: "aistudio IMG",
+    img: "https://iili.io/35zs1GR.webp",
+    link: "https://aistudio.google.com/prompts/new_chat"
+  }, {
+    id: "ai-pkg",
+    name: "snapedit",
+    img: "https://iili.io/35zLbsf.webp",
+    link: "https://snapedit.app/es/enhance/upload"
+  }, {
+    id: "ai-pkg",
+    name: "pica-ai",
+    img: "https://iili.io/35zZM3Q.webp",
+    link: "https://www.pica-ai.com/es/photo-enhancer/"
+  }, {
+    id: "ai-pkg",
+    name: "cutout.pro",
+    img: "https://iili.io/35ztQb1.png",
+    link: "https://www.cutout.pro/es/photo-enhancer-sharpener-upscaler/upload"
+  }, {
+    id: "ai-pkg",
+    name: "fotor",
+    img: "https://iili.io/35zbjuS.webp",
+    link: "https://www.fotor.com/es/features/one-tap-enhance.html"
+  }, {
+    id: "ai-pkg",
+    name: "aiease",
+    img: "https://iili.io/35zmNJR.png",
+    link: "https://www.aiease.ai/app/dashboard"
+  }, {
+    id: "ai-pkg",
+    name: "goart.fotor",
+    img: "https://iili.io/35I9lR4.webp",
+    link: "https://goart.fotor.com/"
+  }, {
+    id: "ai-pkg",
+    name: "ghibliai",
+    img: "https://iili.io/35IHO4n.webp",
+    link: "https://ghibliai.io/"
+  }, {
+    id: "",
+    name: "",
+    img: "",
+    link: ""
   },
   // MARK: --- -- -- USE
   {
