@@ -34,19 +34,19 @@ All the tools 🛠️ you need as a developer, in one place.\
 2. install package
 
   ```sh
-  npm install install
+  bun install
   ```
 
-- o NPM
+- or
 
   ```sh
-  npm install i
+  npm install 
   ```
 
 3. start project
 
    ```sh
-   pnpm run dev
+   bun run dev
    ```
 
 ## Contribute to the Project
